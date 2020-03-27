@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Zipher';
+  src: local('Zipher'), url(./fonts/zipher.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Spooky';
+  src: local('Spooky'), url(./fonts/SpookyvhboldRegular-p6Xy.ttf) format('truetype');
+}
+
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

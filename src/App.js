@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import {
+  FirstPage,
+  SecondPage,
+  ThirdPage,
+  FourthPage,
+  FifthPage,
+  SixthPage,
+  SeventhPage,
+  EighthPage,
+  NinthPage,
+  TenthPage,
+} from "./containers";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/9" exact component={TenthPage} />
+          <Route path="/8" exact component={NinthPage} />
+          <Route path="/7" exact component={EighthPage} />
+          <Route path="/6" exact component={SeventhPage} />
+          <Route path="/5" exact component={SixthPage} />
+          <Route path="/4" exact component={FifthPage} />
+          <Route path="/3" exact component={FourthPage} />
+          <Route path="/2" exact component={ThirdPage} />
+          <Route path="/1" exact component={SecondPage} />
+          <Route path="/" exact component={FirstPage} />
+        </Switch>
+      </BrowserRouter>
+    </Layout>
   );
 }
 
