@@ -21,7 +21,7 @@ const StyledParagraph = styled(Typo.p)`
 const InputWrapper = styled.div`
   display: flex;
   align-items: baseline;
-  justify-content: space-evenly;
+  justify-content: center;
   > div {
     margin: 0;
   }
@@ -52,7 +52,7 @@ const NinthPage = ({ history }) => {
         <PageLayout text={contentText} image={imageRebus}>
           <StyledParagraph>{contentText1}</StyledParagraph>
           <InputWrapper>
-            <Typo.h3>by</Typo.h3>
+            <Typo.p>by</Typo.p>
             <InputFieldWithButton
               inputValue={inputValue}
               setInputValue={setInputValue}
