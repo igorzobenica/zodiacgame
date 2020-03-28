@@ -5,6 +5,7 @@ import InputFields from "./InputFields";
 import FooterButtons from "../../components/FooterButtons";
 import styled from 'styled-components';
 import { Page3Background as image } from "../../ui/Background";
+import { PAGE_2, PAGE_4 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -36,7 +37,7 @@ const ThirdPage = ({ history }) => {
     setSecondInputValidationError("");
     setThirdInputValidationError("");
     if (isFirstCorrect && isSecondCorrect && isThirdCorrect) {
-      history.push("/3");
+      history.push(PAGE_4);
     } else {
       if (!isFirstCorrect) {
         setFirstInputValidationError("wrong answer");
@@ -83,7 +84,7 @@ const ThirdPage = ({ history }) => {
             isCorrect={isFirstCorrect && isSecondCorrect && isThirdCorrect}
           />
         </PageLayout>
-        <FooterButtons linkBack="/1" onClick={onClick} isDisabled={hasEmptyValue}/>
+        <FooterButtons linkBack={PAGE_2} onClick={onClick} isDisabled={hasEmptyValue}/>
       </div>
       <div></div>
     </PageWrapper>

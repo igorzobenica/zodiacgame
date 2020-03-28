@@ -6,6 +6,7 @@ import { PAGE_6_CONTENT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from "styled-components";
 import { Page6Background as image, Page6Rebus as imageRebus } from "../../ui/Background";
+import { PAGE_5, PAGE_7 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -23,7 +24,7 @@ const ImageWrapper = styled.div`
 const contentText = PAGE_6_CONTENT_TEXT;
 const maxLength = 20;
 
-const correctAnswers = ["apollo twelve", "apollo 12", "apollo12"];
+const correctAnswers = ["apollo twelve", "apollotwelve", "apollo 12", "apollo12"];
 
 const SixthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState("");
@@ -32,7 +33,7 @@ const SixthPage = ({ history }) => {
 
   const onClick = () => {
     if (isCorrect) {
-      history.push("/6");
+      history.push(PAGE_7);
     } else {
       setValidationError("wrong answer");
     }
@@ -53,7 +54,7 @@ const SixthPage = ({ history }) => {
           />
         </PageLayout>
         <FooterButtons
-          linkBack="/4"
+          linkBack={PAGE_5}
           onClick={onClick}
           isDisabled={!inputValue}
         />

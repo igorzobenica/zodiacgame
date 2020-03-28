@@ -30,7 +30,7 @@ export const PAGE_4_HEADER_TEXT = 'Page 4';
 export const PAGE_4_CONTENT_TEXT = `You have a keen eye… 
 
 Let’s take a stroll down memory lane, shall we:
-When I was a kid my father used to take me on long drives near a lake. We always pulled over in two spots and paid respect to my father's work. Because, you see, it is in these two spots that he attacked some people and claimed their souls going completely WIKId. The first site was David and Betty, the second Michael and Darlene. 
+When I was a kid my father used to take me on long drives near a lake. We always pulled over in two spots and paid respect to my father's work. Because, you see, it is in these two spots that he attacked some people and claimed their souls going completely <span>WIKI</span>d. The first site was David and Betty, the second Michael and Darlene. 
 
 I want you to examine daddy’s favorite area a bit better. There are woods, creeks, lakes and roads. Some roads in this area are so small that they don’t even have a name. 
 Tell me, when you drive from the location of the first murder to the location of the second murder, what is the first named road you come across on your right?
@@ -64,9 +64,9 @@ How many victims did he claim at that moment?
 // PAGE 8
 export const PAGE_8_HEADER_TEXT = 'Page 8';
 export const PAGE_8_CONTENT_TEXT = `You see, dad was very honest. He claimed more victims than the police knew about. He also liked talking to news reporters on TV.
-Once he actually announced that he will call-in during the live broadcast. I remember a lot of people having doubts whether the <strong>Zodiac killer</strong> will really make that call. The whole nation was shocked when they heard the <strong>real</strong> Zodiac’s <strong>voice</strong>. 
-Although the <strong>police</strong> were expecting him to make some mistake, dad didn’t <strong>say</strong> too much. He was a clever man. 
-Even weeks later everyone was talking about that broadcast. It’s not a surprise, you don’t get to hear <strong>calls</strong> from Zodiac every day. I <strong>never</strong> felt as proud as I did back then! There were some rumors that the police <strong>traced</strong> the call and that he will be caught soon, but as you know those were just rumors... 
+Once he actually announced that he will call-in during the live broadcast. I remember a lot of people having doubts whether the <span>Zodiac killer</span> will really make that call. The whole nation was shocked when they heard the <span>real</span> Zodiac’s <span>voice</span>. 
+Although the <span>police</span> were expecting him to make some mistake, dad didn’t <span>say</span> too much. He was a clever man. 
+Even weeks later everyone was talking about that broadcast. It’s not a surprise, you don’t get to hear <span>calls</span> from Zodiac every day. I <span>never</span> felt as proud as I did back then! There were some rumors that the police <span>traced</span> the call and that he will be caught soon, but as you know those were just rumors... 
 Now that you know the background of the video, all you have to do is to watch it. I turned it into a challenge just for you.
 
 To get the final answer you have to follow my instructions:
@@ -75,7 +75,7 @@ To get the final answer you have to follow my instructions:
 - Get a pen and paper ready. 
 - Connect:
 `;
-export const PAGE_8_CONTENT_TEXT1 = `I hope you know your Roman numerals.
+export const PAGE_8_CONTENT_TEXT1 = `I hope you know your Roman numerals, they will tell you from which time you should play the video again in order to get the answer.
 
 What three letters did you hear?
 `;

@@ -6,6 +6,7 @@ import { PAGE_7_CONTENT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { Page7Background as image } from "../../ui/Background";
+import { PAGE_6, PAGE_8 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -24,7 +25,7 @@ const SeventhPage = ({ history }) => {
 
   const onClick = () => {
     if (isCorrect) {
-      history.push("/7");
+      history.push(PAGE_8);
     } else {
       setValidationError("wrong answer");
     }
@@ -44,7 +45,7 @@ const SeventhPage = ({ history }) => {
             onEnter={onClick}
           />
         </PageLayout>
-        <FooterButtons linkBack="/5" onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons linkBack={PAGE_6} onClick={onClick} isDisabled={!inputValue}/>
       </div>
       <div></div>
     </PageWrapper>

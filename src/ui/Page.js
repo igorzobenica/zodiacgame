@@ -8,7 +8,7 @@ const Page = styled.main`
   color: ${color};
   margin: 0 auto;
   max-width: 61rem;
-  padding: 5rem 0.5rem;
+  padding: 4rem 0.5rem;
 `;
 
 Page.defaultProps = {

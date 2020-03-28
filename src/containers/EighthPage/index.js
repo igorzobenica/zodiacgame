@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import parse from 'html-react-parser';
-import PropTypes from 'prop-types';
-import PageLayout from '../../components/PageLayout';
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_8_CONTENT_TEXT1, PAGE_8_CONTENT_TEXT } from '../constants';
 import CharInputFields from '../../components/CharInputFields';
 import styled from 'styled-components';
 import { Page8Background as image, Page8Rebus as imageRebus } from "../../ui/Background";
-import { Audio } from "../../ui/Background/audio";
 import { Typo } from '../../ui';
+import { PAGE_7, PAGE_9 } from '../../routeConstants';
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -22,6 +20,9 @@ const LargeTextWrapper = styled.div`
 const TextWrapper = styled.div`
   margin-bottom: 3rem;
   white-space: pre-wrap;
+  span {
+    text-decoration: underline;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -43,7 +44,7 @@ const EighthPage = ({history}) => {
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
   const onClick = () => {
     if (isCorrect) {
-      history.push("/8");
+      history.push(PAGE_9);
     } else {
       setValidationError('wrong!');
     }
@@ -51,7 +52,7 @@ const EighthPage = ({history}) => {
   return (
     <PageWrapper>
         <LargeTextWrapper>
-          <Typo.p>{parse(contentText)}</Typo.p>
+          <TextWrapper><Typo.p>{parse(contentText)}</Typo.p></TextWrapper>
           <ImageWrapper><img src={imageRebus} alt="" /></ImageWrapper>
           <TextWrapper><Typo.p>{contentText1}</Typo.p></TextWrapper>
           <CharInputFields
@@ -60,13 +61,9 @@ const EighthPage = ({history}) => {
             validationError={validationError}
           />
         </LargeTextWrapper>
-        <FooterButtons linkBack="/6" onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons linkBack={PAGE_7} onClick={onClick} isDisabled={!inputValue}/>
     </PageWrapper>
   )
-}
-
-EighthPage.propTypes = {
-
 }
 
 export default EighthPage

@@ -1,3 +1,5 @@
+export { default as HintTextBox } from '../../img/Hint_text_box.png';
+export { default as HintBackground } from '../../img/Hint_Background.png';
 export { default as Page0Background } from '../../img/Page_0_background.png';
 export { default as Page1Background } from '../../img/Page_1_background.png';
 export { default as Page1Logo } from '../../img/Page_0_Zlogo.png';

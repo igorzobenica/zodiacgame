@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import PageLayout from '../../components/PageLayout';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_5_CONTENT_TEXT } from '../constants';
-import CharInputFields from '../../components/CharInputFields';
-import styled from 'styled-components';
-import { Page5Background as image, Page5Table as tableImage, Page5AudioIcon as audioIcon } from "../../ui/Background";
-import {MEDIA_MEDIUM} from "../../ui/theme/tokens/breakpoints";
+import { PAGE_5_CONTENT_TEXT } from "../constants";
+import CharInputFields from "../../components/CharInputFields";
+import styled from "styled-components";
+import {
+  Page5Background as image,
+  Page5Table as tableImage,
+  Page5AudioIcon as audioIcon
+} from "../../ui/Background";
+import { IconWithLabel } from "../../ui";
+import { MEDIA_MEDIUM } from "../../ui/theme/tokens/breakpoints";
 import { AudioModulated } from "../../ui/Background/audio";
+import { PAGE_4, PAGE_6 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -15,44 +21,37 @@ const PageWrapper = styled.div`
   @media (min-width: ${MEDIA_MEDIUM}px) {
     display: flex;
   }
-`
+`;
 const ImageWrapper = styled.div`
   > div {
     > img {
       max-width: 100%;
-    }
-    &:last-child {
-      display: flex;
-      justify-content: center;
-      > img {
-        width: 5rem;
-        &:hover {
-          transform: scale(0.9);
-          cursor: pointer;
-        }
-      }
     }
   }
 `;
 
 const contentText = PAGE_5_CONTENT_TEXT;
 
-const correctAnswers = ['340'];
+const correctAnswers = ["340"];
 
-const FifthPage = ({history}) => {
-  const [validationError, setValidationError] = useState('');
-  const [inputValue, setInputValue] = useState('');
+const FifthPage = ({ history }) => {
+  const [validationError, setValidationError] = useState("");
+  const [inputValue, setInputValue] = useState("");
+  const [player, setPlayer] = useState();
   const [playing, setPlaying] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
   const onClick = () => {
     if (isCorrect) {
-      history.push("/5");
+      history.push(PAGE_6);
     } else {
-      setValidationError('wrong!');
+      setValidationError("wrong!");
     }
   };
   const onClickPlay = () => {
-    setPlaying(true);
+    player && player.seekTo(0, "seconds");
+    if (!playing) {
+      setPlaying(true);
+    }
   };
   return (
     <PageWrapper>
@@ -60,30 +59,37 @@ const FifthPage = ({history}) => {
         <PageLayout
           text={contentText}
           videoUrl={AudioModulated}
+          hideVideo={true}
+          setPlayer={setPlayer}
           playing={playing}
+          controls={false}
         >
           <CharInputFields
-            inputValues={[inputValue[0] || '',inputValue[1] || '',inputValue[2] || '']}
+            inputValues={[
+              inputValue[0] || "",
+              inputValue[1] || "",
+              inputValue[2] || ""
+            ]}
             setInputValue={setInputValue}
             validationError={validationError}
           />
         </PageLayout>
-        <FooterButtons linkBack="/3" onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons
+          linkBack={PAGE_4}
+          onClick={onClick}
+          isDisabled={!inputValue}
+        />
       </div>
       <ImageWrapper>
         <div>
           <img src={tableImage} alt="" />
         </div>
-        <div>
-          <img src={audioIcon} alt="" onClick={onClickPlay}/>
-        </div>
+        <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
       </ImageWrapper>
     </PageWrapper>
-  )
-}
+  );
+};
 
-FifthPage.propTypes = {
+FifthPage.propTypes = {};
 
-}
-
-export default FifthPage
+export default FifthPage;

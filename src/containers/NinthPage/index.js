@@ -7,6 +7,7 @@ import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { Page9Background as image, Page9Rebus as imageRebus } from "../../ui/Background";
 import { Typo } from '../../ui';
+import { PAGE_8, PAGE_10 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -39,7 +40,7 @@ const NinthPage = ({ history }) => {
 
   const onClick = () => {
     if (isCorrect) {
-      history.push("/9");
+      history.push(PAGE_10);
     } else {
       setValidationError("wrong answer");
     }
@@ -63,7 +64,7 @@ const NinthPage = ({ history }) => {
             />
           </InputWrapper>
         </PageLayout>
-        <FooterButtons linkBack="/7" onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons linkBack={PAGE_8} onClick={onClick} isDisabled={!inputValue}/>
       </div>
       <div></div>
     </PageWrapper>

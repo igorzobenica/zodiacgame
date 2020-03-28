@@ -1,6 +1,18 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import {
+  PAGE_1,
+  PAGE_2,
+  PAGE_3,
+  PAGE_4,
+  PAGE_5,
+  PAGE_6,
+  PAGE_7,
+  PAGE_8,
+  PAGE_9,
+  PAGE_10
+} from "./routeConstants";
 import {
   FirstPage,
   SecondPage,
@@ -11,27 +23,27 @@ import {
   SeventhPage,
   EighthPage,
   NinthPage,
-  TenthPage,
+  TenthPage
 } from "./containers";
 
 function App() {
   return (
-    <Layout>
-      <BrowserRouter>
+    <Router>
+      <Layout>
         <Switch>
-          <Route path="/9" exact component={TenthPage} />
-          <Route path="/8" exact component={NinthPage} />
-          <Route path="/7" exact component={EighthPage} />
-          <Route path="/6" exact component={SeventhPage} />
-          <Route path="/5" exact component={SixthPage} />
-          <Route path="/4" exact component={FifthPage} />
-          <Route path="/3" exact component={FourthPage} />
-          <Route path="/2" exact component={ThirdPage} />
-          <Route path="/1" exact component={SecondPage} />
-          <Route path="/" exact component={FirstPage} />
+          <Route path={PAGE_10} exact component={TenthPage} />
+          <Route path={PAGE_9} exact component={NinthPage} />
+          <Route path={PAGE_8} exact component={EighthPage} />
+          <Route path={PAGE_7} exact component={SeventhPage} />
+          <Route path={PAGE_6} exact component={SixthPage} />
+          <Route path={PAGE_5} exact component={FifthPage} />
+          <Route path={PAGE_4} exact component={FourthPage} />
+          <Route path={PAGE_3} exact component={ThirdPage} />
+          <Route path={PAGE_2} exact component={SecondPage} />
+          <Route path={PAGE_1} exact component={FirstPage} />
         </Switch>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </Router>
   );
 }
 
