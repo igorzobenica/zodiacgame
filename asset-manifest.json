@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/zodiacgame/static/css/main.a934912d.chunk.css",
-    "main.js": "/zodiacgame/static/js/main.dc36dd84.chunk.js",
-    "main.js.map": "/zodiacgame/static/js/main.dc36dd84.chunk.js.map",
+    "main.js": "/zodiacgame/static/js/main.863604b7.chunk.js",
+    "main.js.map": "/zodiacgame/static/js/main.863604b7.chunk.js.map",
     "runtime-main.js": "/zodiacgame/static/js/runtime-main.ff222ce5.js",
     "runtime-main.js.map": "/zodiacgame/static/js/runtime-main.ff222ce5.js.map",
     "static/js/2.5018fa00.chunk.js": "/zodiacgame/static/js/2.5018fa00.chunk.js",
     "static/js/2.5018fa00.chunk.js.map": "/zodiacgame/static/js/2.5018fa00.chunk.js.map",
     "index.html": "/zodiacgame/index.html",
-    "precache-manifest.39525de70dde0f5f28836d11a57c4903.js": "/zodiacgame/precache-manifest.39525de70dde0f5f28836d11a57c4903.js",
+    "precache-manifest.2a9e96a2e95f486a256bf1be9d0b19ba.js": "/zodiacgame/precache-manifest.2a9e96a2e95f486a256bf1be9d0b19ba.js",
     "service-worker.js": "/zodiacgame/service-worker.js",
     "static/css/main.a934912d.chunk.css.map": "/zodiacgame/static/css/main.a934912d.chunk.css.map",
     "static/js/2.5018fa00.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.5018fa00.chunk.js.LICENSE.txt",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.ff222ce5.js",
     "static/js/2.5018fa00.chunk.js",
     "static/css/main.a934912d.chunk.css",
-    "static/js/main.dc36dd84.chunk.js"
+    "static/js/main.863604b7.chunk.js"
   ]
 }
