@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/zodiacgame/static/css/main.a934912d.chunk.css",
-    "main.js": "/zodiacgame/static/js/main.86eeae53.chunk.js",
-    "main.js.map": "/zodiacgame/static/js/main.86eeae53.chunk.js.map",
+    "main.js": "/zodiacgame/static/js/main.5075eded.chunk.js",
+    "main.js.map": "/zodiacgame/static/js/main.5075eded.chunk.js.map",
     "runtime-main.js": "/zodiacgame/static/js/runtime-main.ff222ce5.js",
     "runtime-main.js.map": "/zodiacgame/static/js/runtime-main.ff222ce5.js.map",
-    "static/js/2.5018fa00.chunk.js": "/zodiacgame/static/js/2.5018fa00.chunk.js",
-    "static/js/2.5018fa00.chunk.js.map": "/zodiacgame/static/js/2.5018fa00.chunk.js.map",
+    "static/js/2.8b5bc95f.chunk.js": "/zodiacgame/static/js/2.8b5bc95f.chunk.js",
+    "static/js/2.8b5bc95f.chunk.js.map": "/zodiacgame/static/js/2.8b5bc95f.chunk.js.map",
     "index.html": "/zodiacgame/index.html",
-    "precache-manifest.d8f4a02eb1e7c4d06db86f005fb586be.js": "/zodiacgame/precache-manifest.d8f4a02eb1e7c4d06db86f005fb586be.js",
+    "precache-manifest.4d7569a9ce77247827270e7c03cc18da.js": "/zodiacgame/precache-manifest.4d7569a9ce77247827270e7c03cc18da.js",
     "service-worker.js": "/zodiacgame/service-worker.js",
     "static/css/main.a934912d.chunk.css.map": "/zodiacgame/static/css/main.a934912d.chunk.css.map",
-    "static/js/2.5018fa00.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.5018fa00.chunk.js.LICENSE.txt",
+    "static/js/2.8b5bc95f.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.8b5bc95f.chunk.js.LICENSE.txt",
     "static/media/Page_0_background.png": "/zodiacgame/static/media/Page_0_background.25eeca30.png",
     "static/media/Page_1_background.png": "/zodiacgame/static/media/Page_1_background.0b477495.png",
     "static/media/Page_2_background.png": "/zodiacgame/static/media/Page_2_background.60611e2d.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ff222ce5.js",
-    "static/js/2.5018fa00.chunk.js",
+    "static/js/2.8b5bc95f.chunk.js",
     "static/css/main.a934912d.chunk.css",
-    "static/js/main.86eeae53.chunk.js"
+    "static/js/main.5075eded.chunk.js"
   ]
 }
