@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/zodiacgame/static/css/main.a934912d.chunk.css",
-    "main.js": "/zodiacgame/static/js/main.d691fd66.chunk.js",
-    "main.js.map": "/zodiacgame/static/js/main.d691fd66.chunk.js.map",
+    "main.js": "/zodiacgame/static/js/main.6c52cf44.chunk.js",
+    "main.js.map": "/zodiacgame/static/js/main.6c52cf44.chunk.js.map",
     "runtime-main.js": "/zodiacgame/static/js/runtime-main.ff222ce5.js",
     "runtime-main.js.map": "/zodiacgame/static/js/runtime-main.ff222ce5.js.map",
-    "static/js/2.68590a92.chunk.js": "/zodiacgame/static/js/2.68590a92.chunk.js",
-    "static/js/2.68590a92.chunk.js.map": "/zodiacgame/static/js/2.68590a92.chunk.js.map",
+    "static/js/2.8a98b452.chunk.js": "/zodiacgame/static/js/2.8a98b452.chunk.js",
+    "static/js/2.8a98b452.chunk.js.map": "/zodiacgame/static/js/2.8a98b452.chunk.js.map",
     "index.html": "/zodiacgame/index.html",
-    "precache-manifest.dea3d74adbadbcf9690014a97654a4c6.js": "/zodiacgame/precache-manifest.dea3d74adbadbcf9690014a97654a4c6.js",
+    "precache-manifest.e6667780f6869edd815cce3d5317e179.js": "/zodiacgame/precache-manifest.e6667780f6869edd815cce3d5317e179.js",
     "service-worker.js": "/zodiacgame/service-worker.js",
     "static/css/main.a934912d.chunk.css.map": "/zodiacgame/static/css/main.a934912d.chunk.css.map",
-    "static/js/2.68590a92.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.68590a92.chunk.js.LICENSE.txt",
+    "static/js/2.8a98b452.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.8a98b452.chunk.js.LICENSE.txt",
+    "static/media/Hint_Background.png": "/zodiacgame/static/media/Hint_Background.657cfcbe.png",
+    "static/media/Hint_text_box.png": "/zodiacgame/static/media/Hint_text_box.6ed62ee8.png",
     "static/media/Page_0_background.png": "/zodiacgame/static/media/Page_0_background.25eeca30.png",
     "static/media/Page_1_background.png": "/zodiacgame/static/media/Page_1_background.0b477495.png",
     "static/media/Page_2_background.png": "/zodiacgame/static/media/Page_2_background.60611e2d.png",
@@ -35,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ff222ce5.js",
-    "static/js/2.68590a92.chunk.js",
+    "static/js/2.8a98b452.chunk.js",
     "static/css/main.a934912d.chunk.css",
-    "static/js/main.d691fd66.chunk.js"
+    "static/js/main.6c52cf44.chunk.js"
   ]
 }

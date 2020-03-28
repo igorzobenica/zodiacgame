@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zodiacgame/precache-manifest.dea3d74adbadbcf9690014a97654a4c6.js"
+  "/zodiacgame/precache-manifest.e6667780f6869edd815cce3d5317e179.js"
 );
 
 self.addEventListener('message', (event) => {
