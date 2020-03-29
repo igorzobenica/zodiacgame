@@ -84,8 +84,9 @@ Connect:
 export const PAGE_8_CONTENT_TEXT1 = `If you know your roman numerals play the video again from this time. 
 The question is: What three letters did you hear?
 `;
-export const PAGE_8_HINT_TEXT = `Look at the words ZODIAC KILLER.
-If you connect Z and K you will get a I
+export const PAGE_8_HINT_TEXT = `Use the underlined words from the text to find the correct video. Play it and pause it at the right time.
+Look at the words ZODIAC KILLER on the paused screen.
+If you connect Z and K you will get "I" which is roman for 1.
 Following same logic you will get:
 I:XXI`;
 

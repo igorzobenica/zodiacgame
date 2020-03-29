@@ -11,7 +11,8 @@ import {
   Page5Table as tableImage,
   Page5AudioIcon as audioIcon
 } from "../../ui/Background";
-import { IconWithLabel } from "../../ui";
+import ReactPlayer from "react-player";
+import { IconWithLabel, Typo } from "../../ui";
 import { MEDIA_MEDIUM } from "../../ui/theme/tokens/breakpoints";
 import { AudioModulated } from "../../ui/Background/audio";
 import { PAGE_4, PAGE_6 } from "../../routeConstants";
@@ -19,17 +20,36 @@ import { PAGE_4, PAGE_6 } from "../../routeConstants";
 const PageWrapper = styled.div`
   background-image: url(${image});
   min-height: 100vh;
+`;
+const ContentWrapper = styled.div`
+  margin-bottom: 3rem;
   @media (min-width: ${MEDIA_MEDIUM}px) {
     display: flex;
+    margin-bottom: 0;
   }
 `;
 const ImageWrapper = styled.div`
+  text-align: center;
   > div {
     > img {
       max-width: 100%;
     }
   }
 `;
+const PlayerWrapper = styled.div`
+  margin: 0 auto;
+    max-width: 560px;
+    height: 315px;
+    display: ${({hideVideo}) => hideVideo && 'none'};
+`;
+const TextWrapper = styled.div`
+  margin: 4rem;
+  white-space: pre-wrap;
+  span {
+    text-decoration: underline;
+  }
+`;
+
 const hintText = PAGE_5_HINT_TEXT;
 const contentText = PAGE_5_CONTENT_TEXT;
 
@@ -60,15 +80,19 @@ const FifthPage = ({ history }) => {
   };
   return (
     <PageWrapper>
-      <div>
-        <PageLayout
-          text={contentText}
-          videoUrl={AudioModulated}
-          hideVideo={true}
-          setPlayer={setPlayer}
-          playing={playing}
-          controls={false}
-        >
+      <ContentWrapper>
+        <div>
+          <TextWrapper><Typo.p>{contentText}</Typo.p></TextWrapper>
+        </div>
+        <ImageWrapper>
+          <div>
+            <img src={tableImage} alt="" />
+          </div>
+          <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
+        </ImageWrapper>
+      </ContentWrapper>
+      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+        <PlayerWrapper hideVideo={true}><ReactPlayer url={AudioModulated} playing={playing} ref={component => setPlayer && (setPlayer(component))} controls={false} width='100%' height='100%'/></PlayerWrapper>
           <CharInputFields
             inputValues={[
               inputValue[0] || "",
@@ -78,21 +102,12 @@ const FifthPage = ({ history }) => {
             setInputValue={setInputValue}
             validationError={validationError}
           />
-        </PageLayout>
         <FooterButtons
           linkBack={PAGE_4}
           onClick={onClick}
           isDisabled={!inputValue}
           onClickHint={onClickHint}
         />
-      </div>
-      <ImageWrapper>
-        <div>
-          <img src={tableImage} alt="" />
-        </div>
-        <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
-      </ImageWrapper>
-      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

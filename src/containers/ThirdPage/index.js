@@ -29,13 +29,13 @@ const ThirdPage = ({ history }) => {
   const [thirdInputValue, setThirdInputValue] = useState("");
   const [showModal, setShowModal] = useState(false);
   const isFirstCorrect = firstInputCorrectAnswers.includes(
-    firstInputValue.toLowerCase()
+    firstInputValue.toLowerCase().trim()
   );
   const isSecondCorrect = secondInputCorrectAnswers.includes(
-    secondInputValue.toLowerCase()
+    secondInputValue.toLowerCase().trim()
   );
   const isThirdCorrect = thirdInputCorrectAnswers.includes(
-    thirdInputValue.toLowerCase()
+    thirdInputValue.toLowerCase().trim()
   );
   const onClick = () => {
     setFirstInputValidationError("");

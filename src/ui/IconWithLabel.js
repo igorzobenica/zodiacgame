@@ -4,7 +4,6 @@ import styled from "styled-components";
 import {Typo} from ".";
 
 const ImageWrapper = styled.div`
-  text-align: center;
   > img {
     margin 0 auto;
     width: 5rem;

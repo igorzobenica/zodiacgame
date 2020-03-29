@@ -39,7 +39,7 @@ const NinthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);
-  const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
+  const isCorrect = correctAnswers.includes(inputValue.toLowerCase().trim());
 
   const onClick = () => {
     if (isCorrect) {
