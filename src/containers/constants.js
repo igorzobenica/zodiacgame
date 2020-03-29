@@ -86,7 +86,7 @@ The question is: What three letters did you hear?
 `;
 export const PAGE_8_HINT_TEXT = `Use the underlined words from the text to find the correct video. Play it and pause it at the right time.
 Look at the words ZODIAC KILLER on the paused screen.
-If you connect Z and K you will get "I" which is roman for 1.
+If you connect Z and K you will get "I" which is roman for number one.
 Following same logic you will get:
 I:XXI`;
 

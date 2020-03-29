@@ -26,7 +26,7 @@ const hintText = PAGE_6_HINT_TEXT;
 const contentText = PAGE_6_CONTENT_TEXT;
 const maxLength = 20;
 
-const correctAnswers = ["apollo twelve", "apollotwelve", "apollo 12", "apollo12"];
+const correctAnswers = ["apollo twelve", "apollotwelve", "apollo 12", "apollo12", "apollo21"];
 
 const SixthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState("");

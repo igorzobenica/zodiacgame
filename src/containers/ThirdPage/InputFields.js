@@ -1,11 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from "styled-components";
-import InputFieldWithButton from '../../components/InputFieldWithButton'
+import InputFieldWithButton from '../../components/InputFieldWithButton';
+import { MEDIA_SMALL } from "../../ui/theme/tokens/breakpoints";
 
 const InputFieldsWrapper = styled.div`
-  width: 70%;
   margin: 0 auto;
+  @media (min-width: ${MEDIA_SMALL}px) {
+    width: 70%;
+  }
 
   > div {
     margin-bottom: 1rem;

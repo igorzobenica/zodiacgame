@@ -6,24 +6,23 @@ import FooterButtons from "../../components/FooterButtons";
 import { Page2Background as image } from "../../ui/Background";
 import { PAGE_1, PAGE_3 } from "../../routeConstants";
 import { PAGE_2_CONTENT_TEXT } from '../constants';
+import { MEDIA_SMALL } from "../../ui/theme/tokens/breakpoints";
 
 const contentText = PAGE_2_CONTENT_TEXT;
 
 const PageWrapper = styled.div`
   background-image: url(${image});
   display: flex;
-  > div:last-child {
-    width: 25%;
+  @media (max-width: ${MEDIA_SMALL}px) {
+    background-position: unset !important;
   }
-`
-
-// const Wrapper = styled.div`
-
-// `
-
-// const DivWrapper = styled.div`
-
-// `
+  > div:last-child {
+      width: 25%;
+      @media (max-width: ${MEDIA_SMALL}px) {
+        width: 0;
+      }
+  }
+`;
 
 const SecondPage = props => {
   return (
