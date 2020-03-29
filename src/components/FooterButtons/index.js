@@ -24,11 +24,11 @@ const FooterButtons = ({
       {linkBack && <Button as={Link} to={linkBack}>
         back
       </Button>}
-      {(linkNext || onClick) && <Button as={!onClick && Link} to={linkNext} onClick={onClick} disabled={isDisabled}>
-        {labelNext}
-      </Button>}
       {onClickHint && <Button onClick={onClickHint}>
         hint
+      </Button>}
+      {(linkNext || onClick) && <Button as={!onClick && Link} to={linkNext} onClick={onClick} disabled={isDisabled}>
+        {labelNext}
       </Button>}
     </Wrapper>
   );

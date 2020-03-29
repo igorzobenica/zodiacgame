@@ -33,7 +33,7 @@ const contentText = PAGE_9_CONTENT_TEXT;
 const contentText1 = PAGE_9_CONTENT_TEXT1;
 const maxLength = 20;
 
-const correctAnswers = ['knife'];
+const correctAnswers = ['knife', 'byknife', 'by knife'];
 
 const NinthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState('');

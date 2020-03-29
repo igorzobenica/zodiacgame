@@ -4,6 +4,8 @@ import styled from "styled-components";
 import {Typo} from ".";
 
 const ImageWrapper = styled.div`
+  max-width: 7rem;
+  margin: 0 auto;
   > img {
     margin 0 auto;
     width: 5rem;
@@ -21,10 +23,12 @@ const IconWithLabel = ({
   ...props
 }) => {
   return (
-    <ImageWrapper onClick={onClick}>
-      <img src={image} alt="" {...props}/>
-      <Typo.p noMargin>{text}</Typo.p>
-    </ImageWrapper>
+    <div>
+      <ImageWrapper onClick={onClick}>
+        <img src={image} alt="" {...props}/>
+        <Typo.p noMargin>{text}</Typo.p>
+      </ImageWrapper>
+    </div>
   )
 }
 

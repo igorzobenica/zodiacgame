@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
-import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_5_CONTENT_TEXT, PAGE_5_HINT_TEXT } from "../constants";
 import CharInputFields from "../../components/CharInputFields";
@@ -24,15 +22,21 @@ const PageWrapper = styled.div`
 const ContentWrapper = styled.div`
   margin-bottom: 3rem;
   @media (min-width: ${MEDIA_MEDIUM}px) {
-    display: flex;
     margin-bottom: 0;
   }
 `;
 const ImageWrapper = styled.div`
   text-align: center;
   > div {
+    &:first-child {
+      @media (min-width: ${MEDIA_MEDIUM}px) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
     > img {
-      max-width: 100%;
+      max-width: 10rem;
+      max-height: 15rem;
     }
   }
 `;
@@ -43,7 +47,7 @@ const PlayerWrapper = styled.div`
     display: ${({hideVideo}) => hideVideo && 'none'};
 `;
 const TextWrapper = styled.div`
-  margin: 4rem;
+  margin: 4rem 4rem 1.5rem;
   white-space: pre-wrap;
   span {
     text-decoration: underline;
@@ -71,9 +75,10 @@ const FifthPage = ({ history }) => {
   };
   const onClickPlay = () => {
     player && player.seekTo(0, "seconds");
-    if (!playing) {
-      setPlaying(true);
-    }
+    setPlaying(true);
+  };
+  const onEnded = () => {
+    setPlaying(false);
   };
   const onClickHint = () => {
     setShowModal(true);
@@ -87,12 +92,14 @@ const FifthPage = ({ history }) => {
         <ImageWrapper>
           <div>
             <img src={tableImage} alt="" />
+            <img src={tableImage} alt="" />
+            <img src={tableImage} alt="" />
           </div>
           <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
         </ImageWrapper>
       </ContentWrapper>
       <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
-        <PlayerWrapper hideVideo={true}><ReactPlayer url={AudioModulated} playing={playing} ref={component => setPlayer && (setPlayer(component))} controls={false} width='100%' height='100%'/></PlayerWrapper>
+        <PlayerWrapper hideVideo={true}><ReactPlayer url={AudioModulated} playing={playing} onEnded={onEnded} ref={component => setPlayer && (setPlayer(component))} controls={false} width='100%' height='100%'/></PlayerWrapper>
           <CharInputFields
             inputValues={[
               inputValue[0] || "",
