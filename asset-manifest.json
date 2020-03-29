@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/zodiacgame/static/css/main.a934912d.chunk.css",
-    "main.js": "/zodiacgame/static/js/main.500903b8.chunk.js",
-    "main.js.map": "/zodiacgame/static/js/main.500903b8.chunk.js.map",
+    "main.js": "/zodiacgame/static/js/main.591c89ae.chunk.js",
+    "main.js.map": "/zodiacgame/static/js/main.591c89ae.chunk.js.map",
     "runtime-main.js": "/zodiacgame/static/js/runtime-main.ff222ce5.js",
     "runtime-main.js.map": "/zodiacgame/static/js/runtime-main.ff222ce5.js.map",
-    "static/js/2.8a98b452.chunk.js": "/zodiacgame/static/js/2.8a98b452.chunk.js",
-    "static/js/2.8a98b452.chunk.js.map": "/zodiacgame/static/js/2.8a98b452.chunk.js.map",
+    "static/js/2.23fdc14e.chunk.js": "/zodiacgame/static/js/2.23fdc14e.chunk.js",
+    "static/js/2.23fdc14e.chunk.js.map": "/zodiacgame/static/js/2.23fdc14e.chunk.js.map",
     "index.html": "/zodiacgame/index.html",
-    "precache-manifest.42a0c3a3a755f64bcb70af5d51455ca5.js": "/zodiacgame/precache-manifest.42a0c3a3a755f64bcb70af5d51455ca5.js",
+    "precache-manifest.1247e6fe82546696bd3a9c6451557825.js": "/zodiacgame/precache-manifest.1247e6fe82546696bd3a9c6451557825.js",
     "service-worker.js": "/zodiacgame/service-worker.js",
     "static/css/main.a934912d.chunk.css.map": "/zodiacgame/static/css/main.a934912d.chunk.css.map",
-    "static/js/2.8a98b452.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.8a98b452.chunk.js.LICENSE.txt",
+    "static/js/2.23fdc14e.chunk.js.LICENSE.txt": "/zodiacgame/static/js/2.23fdc14e.chunk.js.LICENSE.txt",
     "static/media/Hint_Background.png": "/zodiacgame/static/media/Hint_Background.42b23cc0.png",
-    "static/media/Hint_text_box.png": "/zodiacgame/static/media/Hint_text_box.9d1af182.png",
+    "static/media/Hint_text_box.png": "/zodiacgame/static/media/Hint_text_box.2d7a12fe.png",
     "static/media/Page_0_background.png": "/zodiacgame/static/media/Page_0_background.f0f0c71a.png",
     "static/media/Page_1_background.png": "/zodiacgame/static/media/Page_1_background.73adbabc.png",
     "static/media/Page_2_background.png": "/zodiacgame/static/media/Page_2_background.1260d4da.png",
-    "static/media/Page_3_background.png": "/zodiacgame/static/media/Page_3_background.204d8f3f.png",
+    "static/media/Page_3_background.png": "/zodiacgame/static/media/Page_3_background.7610b567.png",
     "static/media/Page_4_background.png": "/zodiacgame/static/media/Page_4_background.48cd38d7.png",
     "static/media/Page_5_background.png": "/zodiacgame/static/media/Page_5_background.48cd38d7.png",
     "static/media/Page_5_tablica.png": "/zodiacgame/static/media/Page_5_tablica.2479ed77.png",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ff222ce5.js",
-    "static/js/2.8a98b452.chunk.js",
+    "static/js/2.23fdc14e.chunk.js",
     "static/css/main.a934912d.chunk.css",
-    "static/js/main.500903b8.chunk.js"
+    "static/js/main.591c89ae.chunk.js"
   ]
 }
