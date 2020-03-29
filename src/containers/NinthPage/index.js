@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_9_CONTENT_TEXT1, PAGE_9_CONTENT_TEXT } from "../constants";
+import { PAGE_9_CONTENT_TEXT1, PAGE_9_CONTENT_TEXT, PAGE_9_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { Page9Background as image, Page9Rebus as imageRebus } from "../../ui/Background";
 import { Typo } from '../../ui';
 import { PAGE_8, PAGE_10 } from "../../routeConstants";
+import HintsModal from "../../components/HintsModal";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -27,6 +28,7 @@ const InputWrapper = styled.div`
   }
 `
 
+const hintText = PAGE_9_HINT_TEXT;
 const contentText = PAGE_9_CONTENT_TEXT;
 const contentText1 = PAGE_9_CONTENT_TEXT1;
 const maxLength = 20;
@@ -36,6 +38,7 @@ const correctAnswers = ['knife'];
 const NinthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
+  const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
 
   const onClick = () => {
@@ -45,6 +48,10 @@ const NinthPage = ({ history }) => {
       setValidationError("wrong answer");
     }
   };
+  const onClickHint = () => {
+    setShowModal(true);
+  };
+
 
   return (
     <PageWrapper>
@@ -64,9 +71,10 @@ const NinthPage = ({ history }) => {
             />
           </InputWrapper>
         </PageLayout>
-        <FooterButtons linkBack={PAGE_8} onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons linkBack={PAGE_8} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
+      <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

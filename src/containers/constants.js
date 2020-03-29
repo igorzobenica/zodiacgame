@@ -23,7 +23,10 @@ Pay close attention to the video below.
 `;
 
 // PAGE 3
-export const PAGE_3_HEADER_TEXT = 'Page 3';
+export const PAGE_3_HINT_TEXT = `Color of the gloves - 1:13
+Number on the necklace - 3:02
+Color of the lamp - 2:04
+`;
 
 // PAGE 4
 export const PAGE_4_HEADER_TEXT = 'Page 4';
@@ -35,6 +38,7 @@ When I was a kid my father used to take me on long drives near a lake. We always
 I want you to examine daddy’s favorite area a bit better. There are woods, creeks, lakes and roads. Some roads in this area are so small that they don’t even have a name. 
 Tell me, when you drive from the location of the first murder to the location of the second murder, what is the first named road you come across on your right?
 `;
+export const PAGE_4_HINT_TEXT = `The victims section on the Zodiac Killer Wikipedia page has the coordinates of each murder.`
 
 // PAGE 5
 export const PAGE_5_HEADER_TEXT = 'Page 5';
@@ -44,6 +48,7 @@ Or do it for yourself if it makes it easier...
 
 Don’t forget to get a piece of paper and a pen.
 `;
+export const PAGE_5_HINT_TEXT = `Mark the fields you hear in the audio, if you focus on the unmarked fields they will spell a digit. Repeat for the other two numbers.`;
 
 // PAGE 6
 export const PAGE_6_HEADER_TEXT = 'Page 6';
@@ -51,6 +56,7 @@ export const PAGE_6_CONTENT_TEXT = `Correct, 340… A few decades ago, daddy wro
 
 I guess you know what your challenge is. Go!
 `;
+export const PAGE_6_HINT_TEXT = `Search for a picture of Cipher 340 and “combine” it with the encrypted message.`;
 
 // PAGE 7
 export const PAGE_7_HEADER_TEXT = 'Page 7';
@@ -60,30 +66,34 @@ He sent the letter with the purpose to let everyone know how many people he had 
 
 How many victims did he claim at that moment?
 `;
+export const PAGE_7_HINT_TEXT = `Figuring out the date when the newspaper published the article is a good start. From there, search for a picture of the article published on that date.`;
 
 // PAGE 8
 export const PAGE_8_HEADER_TEXT = 'Page 8';
-export const PAGE_8_CONTENT_TEXT = `You see, dad was very honest. He claimed more victims than the police knew about. He also liked talking to news reporters on TV.
-Once he actually announced that he will call-in during the live broadcast. I remember a lot of people having doubts whether the <span>Zodiac killer</span> will really make that call. The whole nation was shocked when they heard the <span>real</span> Zodiac’s <span>voice</span>. 
-Although the <span>police</span> were expecting him to make some mistake, dad didn’t <span>say</span> too much. He was a clever man. 
-Even weeks later everyone was talking about that broadcast. It’s not a surprise, you don’t get to hear <span>calls</span> from Zodiac every day. I <span>never</span> felt as proud as I did back then! There were some rumors that the police <span>traced</span> the call and that he will be caught soon, but as you know those were just rumors... 
-Now that you know the background of the video, all you have to do is to watch it. I turned it into a challenge just for you.
+export const PAGE_8_CONTENT_TEXT = `You see, dad was very honest. He claimed more victims than the police knew about. He also liked talking to news reporters on TV. 
+Once he actually announced that he will call-in during the live broadcast. A lot of people had doubts whether the <span>Zodiac killer</span> will really make that call. Everyone was shocked when they heard the <span>real</span> Zodiac’s <span>voice</span>. 
+The <span>police</span> were expecting him to make a mistake, but dad was smart and didn’t <span>say</span> too much. 
+Weeks later everyone was still talking about it. That was one of the most exciting <span>calls</span> in TV history and best of all… the police <span>never traced</span> the call.
 
 To get the final answer you have to follow my instructions:
-- Search Youtube to find the video I described. 
-- Pause the video at 0:24.
-- Get a pen and paper ready. 
-- Connect:
+Find the video I described. 
+Pause the video anywhere between 0:10 and 0:40
+Get a pen and paper ready. 
+Connect:
 `;
-export const PAGE_8_CONTENT_TEXT1 = `I hope you know your Roman numerals, they will tell you from which time you should play the video again in order to get the answer.
-
-What three letters did you hear?
+export const PAGE_8_CONTENT_TEXT1 = `If you know your roman numerals play the video again from this time. 
+The question is: What three letters did you hear?
 `;
+export const PAGE_8_HINT_TEXT = `Look at the words ZODIAC KILLER.
+If you connect Z and K you will get a I
+Following same logic you will get:
+I:XXI`;
 
 // PAGE 9
 export const PAGE_9_HEADER_TEXT = 'Page 9';
 export const PAGE_9_CONTENT_TEXT = `That’s right, he was leaving messages to the San Francisco Chronicle and even went live on the KGO TV station, but there is one particular message that fascinates me. It’s a different type of message...`;
 export const PAGE_9_CONTENT_TEXT1 = `How were they killed?`;
+export const PAGE_9_HINT_TEXT = `Search Zodiac car door`;
 
 // PAGE 10
 export const PAGE_10_CONTENT_TEXT_1 = 'Congratulations, you have a sharp mind.'

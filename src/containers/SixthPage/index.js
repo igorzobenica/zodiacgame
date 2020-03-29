@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_6_CONTENT_TEXT } from "../constants";
+import { PAGE_6_CONTENT_TEXT, PAGE_6_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from "styled-components";
 import { Page6Background as image, Page6Rebus as imageRebus } from "../../ui/Background";
 import { PAGE_5, PAGE_7 } from "../../routeConstants";
+import HintsModal from "../../components/HintsModal";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -21,6 +22,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
+const hintText = PAGE_6_HINT_TEXT;
 const contentText = PAGE_6_CONTENT_TEXT;
 const maxLength = 20;
 
@@ -29,6 +31,7 @@ const correctAnswers = ["apollo twelve", "apollotwelve", "apollo 12", "apollo12"
 const SixthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState("");
   const [validationError, setValidationError] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
 
   const onClick = () => {
@@ -37,6 +40,10 @@ const SixthPage = ({ history }) => {
     } else {
       setValidationError("wrong answer");
     }
+  };
+
+  const onClickHint = () => {
+    setShowModal(true);
   };
 
   return (
@@ -57,7 +64,9 @@ const SixthPage = ({ history }) => {
           linkBack={PAGE_5}
           onClick={onClick}
           isDisabled={!inputValue}
+          onClickHint={onClickHint}
         />
+        <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

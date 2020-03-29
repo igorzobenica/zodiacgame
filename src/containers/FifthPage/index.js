@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_5_CONTENT_TEXT } from "../constants";
+import { PAGE_5_CONTENT_TEXT, PAGE_5_HINT_TEXT } from "../constants";
 import CharInputFields from "../../components/CharInputFields";
 import styled from "styled-components";
+import HintModal from "../../components/HintsModal";
 import {
   Page5Background as image,
   Page5Table as tableImage,
@@ -29,7 +30,7 @@ const ImageWrapper = styled.div`
     }
   }
 `;
-
+const hintText = PAGE_5_HINT_TEXT;
 const contentText = PAGE_5_CONTENT_TEXT;
 
 const correctAnswers = ["340"];
@@ -39,6 +40,7 @@ const FifthPage = ({ history }) => {
   const [inputValue, setInputValue] = useState("");
   const [player, setPlayer] = useState();
   const [playing, setPlaying] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
   const onClick = () => {
     if (isCorrect) {
@@ -52,6 +54,9 @@ const FifthPage = ({ history }) => {
     if (!playing) {
       setPlaying(true);
     }
+  };
+  const onClickHint = () => {
+    setShowModal(true);
   };
   return (
     <PageWrapper>
@@ -78,6 +83,7 @@ const FifthPage = ({ history }) => {
           linkBack={PAGE_4}
           onClick={onClick}
           isDisabled={!inputValue}
+          onClickHint={onClickHint}
         />
       </div>
       <ImageWrapper>
@@ -86,6 +92,7 @@ const FifthPage = ({ history }) => {
         </div>
         <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
       </ImageWrapper>
+      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

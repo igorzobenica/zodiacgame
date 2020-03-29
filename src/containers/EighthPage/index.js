@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import parse from 'html-react-parser';
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_8_CONTENT_TEXT1, PAGE_8_CONTENT_TEXT } from '../constants';
+import { PAGE_8_CONTENT_TEXT1, PAGE_8_CONTENT_TEXT, PAGE_8_HINT_TEXT } from '../constants';
 import CharInputFields from '../../components/CharInputFields';
 import styled from 'styled-components';
 import { Page8Background as image, Page8Rebus as imageRebus } from "../../ui/Background";
 import { Typo } from '../../ui';
 import { PAGE_7, PAGE_9 } from '../../routeConstants';
+import HintsModal from '../../components/HintsModal';
 
 const PageWrapper = styled.div`
   background-image: url(${image});
@@ -33,6 +34,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
+const hintText = PAGE_8_HINT_TEXT;
 const contentText = PAGE_8_CONTENT_TEXT;
 const contentText1 = PAGE_8_CONTENT_TEXT1;
 
@@ -41,6 +43,7 @@ const correctAnswers = ['kgo'];
 const EighthPage = ({history}) => {
   const [validationError, setValidationError] = useState('');
   const [inputValue, setInputValue] = useState('');
+  const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
   const onClick = () => {
     if (isCorrect) {
@@ -48,6 +51,9 @@ const EighthPage = ({history}) => {
     } else {
       setValidationError('wrong!');
     }
+  };
+  const onClickHint = () => {
+    setShowModal(true);
   };
   return (
     <PageWrapper>
@@ -61,7 +67,8 @@ const EighthPage = ({history}) => {
             validationError={validationError}
           />
         </LargeTextWrapper>
-        <FooterButtons linkBack={PAGE_7} onClick={onClick} isDisabled={!inputValue}/>
+        <FooterButtons linkBack={PAGE_7} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>
+        <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   )
 }

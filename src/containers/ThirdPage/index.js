@@ -4,13 +4,17 @@ import PageLayout from "../../components/PageLayout";
 import InputFields from "./InputFields";
 import FooterButtons from "../../components/FooterButtons";
 import styled from 'styled-components';
+import { PAGE_3_HINT_TEXT } from '../constants';
 import { Page3Background as image } from "../../ui/Background";
+import HintModal from "../../components/HintsModal";
 import { PAGE_2, PAGE_4 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
   background-image: url(${image});
   display: flex;
 `
+
+const hintText = PAGE_3_HINT_TEXT;
 
 const firstInputCorrectAnswers = ["yellow"];
 const secondInputCorrectAnswers = ["twenty one", "21"];
@@ -23,6 +27,7 @@ const ThirdPage = ({ history }) => {
   const [firstInputValue, setFirstInputValue] = useState("");
   const [secondInputValue, setSecondInputValue] = useState("");
   const [thirdInputValue, setThirdInputValue] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const isFirstCorrect = firstInputCorrectAnswers.includes(
     firstInputValue.toLowerCase()
   );
@@ -49,6 +54,9 @@ const ThirdPage = ({ history }) => {
         setThirdInputValidationError("wrong answer");
       }
     }
+  };
+  const onClickHint = () => {
+    setShowModal(true);
   };
   const validationErrors = {
     '1': firstInputValidationError,
@@ -84,9 +92,10 @@ const ThirdPage = ({ history }) => {
             isCorrect={isFirstCorrect && isSecondCorrect && isThirdCorrect}
           />
         </PageLayout>
-        <FooterButtons linkBack={PAGE_2} onClick={onClick} isDisabled={hasEmptyValue}/>
+        <FooterButtons linkBack={PAGE_2} onClick={onClick} isDisabled={hasEmptyValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
+      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

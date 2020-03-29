@@ -16,6 +16,7 @@ export { default as Page8Background } from '../../img/Page_8_background.png';
 export { default as Page8Rebus } from '../../img/Page_8_rebus.png';
 export { default as Page9Background } from '../../img/Page_9_background.png';
 export { default as Page9Rebus } from '../../img/Page_9_rebus.png';
+// export { default as Page10Background } from '../../img/Page_10_background.png';
 export { default as SubmitLong } from '../../img/Submit_long.png';
 export { default as SubmitLongWrong } from '../../img/Submit_long_Wrong.png';
 export { default as SubmitShort } from '../../img/Submit_short.png';

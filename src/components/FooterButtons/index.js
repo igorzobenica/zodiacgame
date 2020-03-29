@@ -16,6 +16,7 @@ const FooterButtons = ({
   labelNext,
   justifyContent,
   onClick,
+  onClickHint,
   isDisabled,
 }) => {
   return (
@@ -25,6 +26,9 @@ const FooterButtons = ({
       </Button>}
       {(linkNext || onClick) && <Button as={!onClick && Link} to={linkNext} onClick={onClick} disabled={isDisabled}>
         {labelNext}
+      </Button>}
+      {onClickHint && <Button onClick={onClickHint}>
+        hint
       </Button>}
     </Wrapper>
   );
