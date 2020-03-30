@@ -10,8 +10,7 @@ import {
   PAGE_6,
   PAGE_7,
   PAGE_8,
-  PAGE_9,
-  PAGE_10
+  PAGE_9
 } from "./routeConstants";
 import {
   FirstPage,
@@ -22,8 +21,7 @@ import {
   SixthPage,
   SeventhPage,
   EighthPage,
-  NinthPage,
-  TenthPage
+  NinthPage
 } from "./containers";
 
 function App() {
@@ -31,7 +29,6 @@ function App() {
     <Router>
       <Layout>
         <Switch>
-          <Route path={PAGE_10} exact component={TenthPage} />
           <Route path={PAGE_9} exact component={NinthPage} />
           <Route path={PAGE_8} exact component={EighthPage} />
           <Route path={PAGE_7} exact component={SeventhPage} />

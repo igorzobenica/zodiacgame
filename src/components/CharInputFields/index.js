@@ -29,6 +29,8 @@ const CharInputFields = ({
   inputValues,
   setInputValue,
   validationError,
+  setValidationError,
+  onEnter,
 }) => {
   
   const focusNextField = (nextField) => {
@@ -39,6 +41,9 @@ const CharInputFields = ({
     }
   };
   const onChange = (index, e) => {
+    if (setValidationError) {
+      setValidationError('');
+    }
     const { value } = e.target;
     const newValue = [...inputValues];
     newValue[index] = value;
@@ -72,6 +77,7 @@ const CharInputFields = ({
             onChange={(e) => onChange(index, e)}
             error={!!validationError}
             message={index === 1 ? validationError : ""}
+            onEnter={onEnter}
           />
         </div>
       ))}

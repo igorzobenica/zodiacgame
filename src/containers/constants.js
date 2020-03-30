@@ -68,31 +68,9 @@ How many victims did he claim at that moment?
 `;
 export const PAGE_7_HINT_TEXT = `Figuring out the date when the newspaper published the article is a good start. From there, search for a picture of the article published on that date.`;
 
-// PAGE 8
-export const PAGE_8_HEADER_TEXT = 'Page 8';
-export const PAGE_8_CONTENT_TEXT = `You see, dad was very honest. He claimed more victims than the police knew about. He also liked talking to news reporters on TV. 
-Once he actually announced that he will call-in during the live broadcast. A lot of people had doubts whether the <span>Zodiac killer</span> will really make that call. Everyone was shocked when they heard the <span>real</span> Zodiac’s <span>voice</span>. 
-The <span>police</span> were expecting him to make a mistake, but dad was smart and didn’t <span>say</span> too much. 
-Weeks later everyone was still talking about it. That was one of the most exciting <span>calls</span> in TV history and best of all… the police <span>never traced</span> the call.
-
-To get the final answer you have to follow my instructions:
-Find the video I described. 
-Pause the video anywhere between 0:10 and 0:40
-Get a pen and paper ready. 
-Connect:
-`;
-export const PAGE_8_CONTENT_TEXT1 = `If you know your roman numerals play the video again from this time. 
-The question is: What three letters did you hear?
-`;
-export const PAGE_8_HINT_TEXT = `Use the underlined words from the text to find the correct video. Play it and pause it at the right time.
-Look at the words ZODIAC KILLER on the paused screen.
-If you connect Z and K you will get "I" which is roman for number one.
-Following same logic you will get:
-I:XXI`;
-
 // PAGE 9
 export const PAGE_9_HEADER_TEXT = 'Page 9';
-export const PAGE_9_CONTENT_TEXT = `That’s right, he was leaving messages to the San Francisco Chronicle and even went live on the KGO TV station, but there is one particular message that fascinates me. It’s a different type of message...`;
+export const PAGE_9_CONTENT_TEXT = `That's right he was writing letters to San Francisco Chronicle as well as to the police and TV station. But once he left a different kind of message...`;
 export const PAGE_9_CONTENT_TEXT1 = `How were they killed?`;
 export const PAGE_9_HINT_TEXT = `Search Zodiac car door`;
 

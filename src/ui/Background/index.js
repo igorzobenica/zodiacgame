@@ -12,8 +12,6 @@ export { default as Page5Table } from '../../img/Page_5_tablica.png';
 export { default as Page6Background } from '../../img/Page_6_background.png';
 export { default as Page6Rebus } from '../../img/Page_6_rebus.png';
 export { default as Page7Background } from '../../img/Page_7_background.png';
-export { default as Page8Background } from '../../img/Page_8_background.png';
-export { default as Page8Rebus } from '../../img/Page_8_rebus.png';
 export { default as Page9Background } from '../../img/Page_9_background.png';
 export { default as Page9Rebus } from '../../img/Page_9_rebus.png';
 // export { default as Page10Background } from '../../img/Page_10_background.png';

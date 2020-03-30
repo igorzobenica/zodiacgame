@@ -47,7 +47,7 @@ const FourthPage = ({ history }) => {
             maxLength={maxLength}
             validationError={validationError}
             setValidationError={setValidationError}
-            onEnter={onClick}
+            onEnter={inputValue && onClick}
           />
         </PageLayout>
         <FooterButtons linkBack={PAGE_3} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>

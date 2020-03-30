@@ -43,6 +43,7 @@ const InputFields = ({
   setInputValues,
   setValidationErrors,
   isCorrect,
+  onEnter
 }) => {
   return (
     <InputFieldsWrapper>
@@ -61,6 +62,7 @@ const InputFields = ({
             setInputValue={setInputValues[id]}
             setValidationError={setValidationErrors[id]}
             validationError={validationErrors[id]}
+            onEnter={onEnter}
           />
         </div>
       ))}

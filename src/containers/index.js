@@ -7,4 +7,3 @@ export { default as SixthPage } from './SixthPage';
 export { default as SeventhPage } from './SeventhPage';
 export { default as EighthPage } from './EighthPage';
 export { default as NinthPage } from './NinthPage';
-export { default as TenthPage } from './TenthPage';

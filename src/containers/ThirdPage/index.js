@@ -90,6 +90,7 @@ const ThirdPage = ({ history }) => {
             setInputValues={setInputValues}
             setValidationErrors={setValidationErrors}
             isCorrect={isFirstCorrect && isSecondCorrect && isThirdCorrect}
+            onEnter={!hasEmptyValue && onClick}
           />
         </PageLayout>
         <FooterButtons linkBack={PAGE_2} onClick={onClick} isDisabled={hasEmptyValue} onClickHint={onClickHint}/>

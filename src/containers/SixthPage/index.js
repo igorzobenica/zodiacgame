@@ -57,7 +57,7 @@ const SixthPage = ({ history }) => {
             maxLength={maxLength}
             validationError={validationError}
             setValidationError={setValidationError}
-            onEnter={onClick}
+            onEnter={inputValue && onClick}
           />
         </PageLayout>
         <FooterButtons

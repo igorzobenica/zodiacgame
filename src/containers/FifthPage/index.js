@@ -108,11 +108,13 @@ const FifthPage = ({ history }) => {
             ]}
             setInputValue={setInputValue}
             validationError={validationError}
+            setValidationError={setValidationError}
+            onEnter={inputValue.length === 3 && onClick}
           />
         <FooterButtons
           linkBack={PAGE_4}
           onClick={onClick}
-          isDisabled={!inputValue}
+          isDisabled={inputValue.length !== 3}
           onClickHint={onClickHint}
         />
     </PageWrapper>
