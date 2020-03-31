@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd1b7d6a22c7c2663bbda095dbcc17d1",
+    "revision": "9f22377abca726d5801e58beab50adf4",
     "url": "/zodiacgame/index.html"
   },
   {
-    "revision": "670e41faa53063c59b09",
+    "revision": "9a32cd21ed77afa5af2e",
     "url": "/zodiacgame/static/css/main.a934912d.chunk.css"
   },
   {
-    "revision": "e3fdb43bd3781f4fd766",
-    "url": "/zodiacgame/static/js/2.06b7a2f6.chunk.js"
+    "revision": "32d90744698c3092879d",
+    "url": "/zodiacgame/static/js/2.fd7a255a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/zodiacgame/static/js/2.06b7a2f6.chunk.js.LICENSE.txt"
+    "url": "/zodiacgame/static/js/2.fd7a255a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "670e41faa53063c59b09",
-    "url": "/zodiacgame/static/js/main.70a93341.chunk.js"
+    "revision": "9a32cd21ed77afa5af2e",
+    "url": "/zodiacgame/static/js/main.de53688c.chunk.js"
   },
   {
     "revision": "86005c0ca59903eaf087",
@@ -60,14 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zodiacgame/static/media/Page_3_background_small.eff89965.png"
   },
   {
-    "revision": "48cd38d7b0b3479a1b55b74bb40f6718",
-    "url": "/zodiacgame/static/media/Page_4_background.48cd38d7.png"
-  },
-  {
-    "revision": "48cd38d7b0b3479a1b55b74bb40f6718",
-    "url": "/zodiacgame/static/media/Page_5_background.48cd38d7.png"
-  },
-  {
     "revision": "2479ed772ae63fc3203ccb2a699b821b",
     "url": "/zodiacgame/static/media/Page_5_tablica.2479ed77.png"
   },
@@ -82,14 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "59638e7448ced84b0ca7707e6dfe0239",
     "url": "/zodiacgame/static/media/Page_6_rebus.59638e74.png"
-  },
-  {
-    "revision": "48cd38d7b0b3479a1b55b74bb40f6718",
-    "url": "/zodiacgame/static/media/Page_7_background.48cd38d7.png"
-  },
-  {
-    "revision": "48cd38d7b0b3479a1b55b74bb40f6718",
-    "url": "/zodiacgame/static/media/Page_9_background.48cd38d7.png"
   },
   {
     "revision": "ed08774cbb4d6ed2d9fc75be0bf7b16e",
