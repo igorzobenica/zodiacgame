@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_9_CONTENT_TEXT1, PAGE_9_CONTENT_TEXT, PAGE_9_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
-import { Page9Background as image, Page9Rebus as imageRebus } from "../../ui/Background";
+import { Page1Background as image, Page1BackgroundSmall as imageSmall, Page9Rebus as imageRebus } from "../../ui/Background";
 import { Typo } from '../../ui';
+import { loadImage } from "../../helpers/loadImage";
 import { PAGE_7, PAGE_9 } from "../../routeConstants";
 import HintsModal from "../../components/HintsModal";
 
 const PageWrapper = styled.div`
-  background-image: url(${image});
+  background-image: url(${props => props.isImgLoaded ? image : imageSmall});
   display: flex;
 `
 
@@ -39,6 +40,10 @@ const EighthPage = ({ history }) => {
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase().trim());
+  const [isImgLoaded, setIsImgLoaded] = useState(false)
+  useEffect(() => {
+    loadImage(image, setIsImgLoaded);
+  }, []);
 
   const onClick = () => {
     if (isCorrect) {
@@ -53,7 +58,7 @@ const EighthPage = ({ history }) => {
 
 
   return (
-    <PageWrapper>
+    <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
         <PageLayout text={contentText} image={imageRebus}>
           <StyledParagraph>{contentText1}</StyledParagraph>

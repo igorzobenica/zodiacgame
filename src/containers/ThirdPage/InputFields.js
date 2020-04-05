@@ -27,7 +27,7 @@ const inputFieldsData = [
   },
   {
     id: 2,
-    label: 'what’s the number on a girl’s necklace?',
+    label: 'what’s the number on the girl’s necklace?',
     placeholder: 'write your answer',
   },
   {

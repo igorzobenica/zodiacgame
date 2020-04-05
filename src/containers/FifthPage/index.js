@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_5_CONTENT_TEXT, PAGE_5_HINT_TEXT } from "../constants";
 import CharInputFields from "../../components/CharInputFields";
 import styled from "styled-components";
 import HintModal from "../../components/HintsModal";
 import {
-  Page5Background as image,
+  Page1Background as image,
+  Page1BackgroundSmall as imageSmall,
   Page5Table as tableImage,
   Page5AudioIcon as audioIcon
 } from "../../ui/Background";
 import ReactPlayer from "react-player";
 import { IconWithLabel, Typo } from "../../ui";
+import { loadImage } from "../../helpers/loadImage";
 import { MEDIA_MEDIUM } from "../../ui/theme/tokens/breakpoints";
 import { AudioModulated } from "../../ui/Background/audio";
 import { PAGE_4, PAGE_6 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
-  background-image: url(${image});
+  background-image: url(${props => props.isImgLoaded ? image : imageSmall});
   min-height: 100vh;
 `;
 const ContentWrapper = styled.div`
@@ -66,6 +68,10 @@ const FifthPage = ({ history }) => {
   const [playing, setPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase());
+  const [isImgLoaded, setIsImgLoaded] = useState(false)
+  useEffect(() => {
+    loadImage(image, setIsImgLoaded);
+  }, []);
   const onClick = () => {
     if (isCorrect) {
       history.push(PAGE_6);
@@ -84,7 +90,7 @@ const FifthPage = ({ history }) => {
     setShowModal(true);
   };
   return (
-    <PageWrapper>
+    <PageWrapper isImgLoaded={isImgLoaded}>
       <ContentWrapper>
         <div>
           <TextWrapper><Typo.p>{contentText}</Typo.p></TextWrapper>

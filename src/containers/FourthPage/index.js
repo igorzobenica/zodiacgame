@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState, useEffect } from "react";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_4_CONTENT_TEXT, PAGE_4_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
+import { loadImage } from "../../helpers/loadImage";
 import HintModal from "../../components/HintsModal";
-import { Page4Background as image } from "../../ui/Background";
+import { Page1Background as image, Page1BackgroundSmall as imageSmall } from "../../ui/Background";
 import { PAGE_3, PAGE_5 } from "../../routeConstants";
 
 const PageWrapper = styled.div`
-background-image: url(${image});
+background-image: url(${props => props.isImgLoaded ? image : imageSmall});
 display: flex;
 `
 
@@ -36,8 +36,12 @@ const FourthPage = ({ history }) => {
   const onClickHint = () => {
     setShowModal(true);
   };
+  const [isImgLoaded, setIsImgLoaded] = useState(false)
+  useEffect(() => {
+    loadImage(image, setIsImgLoaded);
+  }, []);
   return (
-    <PageWrapper>
+    <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
         <PageLayout text={contentText}>
           <InputFieldWithButton

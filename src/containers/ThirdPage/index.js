@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState, useEffect } from "react";
 import PageLayout from "../../components/PageLayout";
 import InputFields from "./InputFields";
 import FooterButtons from "../../components/FooterButtons";
 import styled from 'styled-components';
 import { PAGE_3_HINT_TEXT } from '../constants';
-import { Page3Background as image } from "../../ui/Background";
+import { Page3Background as image, Page3BackgroundSmall as imageSmall } from "../../ui/Background";
 import HintModal from "../../components/HintsModal";
 import { PAGE_2, PAGE_4 } from "../../routeConstants";
+import { loadImage } from "../../helpers/loadImage";
 
 const PageWrapper = styled.div`
-  background-image: url(${image});
+  background-image: url(${props => props.isImgLoaded ? image : imageSmall});
   display: flex;
 `
 
@@ -28,6 +28,10 @@ const ThirdPage = ({ history }) => {
   const [secondInputValue, setSecondInputValue] = useState("");
   const [thirdInputValue, setThirdInputValue] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [isImgLoaded, setIsImgLoaded] = useState(false)
+  useEffect(() => {
+    loadImage(image, setIsImgLoaded);
+  }, []);
   const isFirstCorrect = firstInputCorrectAnswers.includes(
     firstInputValue.toLowerCase().trim()
   );
@@ -81,7 +85,7 @@ const ThirdPage = ({ history }) => {
   const hasEmptyValue = Object.keys(inputValues).map(key => inputValues[key]).includes('');
 
   return (
-    <PageWrapper>
+    <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
         <PageLayout>
           <InputFields

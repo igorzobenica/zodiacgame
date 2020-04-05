@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState, useEffect } from "react";
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
 import { PAGE_6_CONTENT_TEXT, PAGE_6_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from "styled-components";
-import { Page6Background as image, Page6Rebus as imageRebus } from "../../ui/Background";
+import { Page6Background as image, Page6BackgroundSmall as imageSmall, Page6Rebus as imageRebus } from "../../ui/Background";
 import { PAGE_5, PAGE_7 } from "../../routeConstants";
 import HintsModal from "../../components/HintsModal";
+import { loadImage } from "../../helpers/loadImage";
 
 const PageWrapper = styled.div`
-  background-image: url(${image});
+  background-image: url(${props => props.isImgLoaded ? image : imageSmall});
   min-height: 100vh;
 `;
 
@@ -33,6 +33,10 @@ const SixthPage = ({ history }) => {
   const [validationError, setValidationError] = useState("");
   const [showModal, setShowModal] = useState(false);
   const isCorrect = correctAnswers.includes(inputValue.toLowerCase().trim());
+  const [isImgLoaded, setIsImgLoaded] = useState(false)
+  useEffect(() => {
+    loadImage(image, setIsImgLoaded);
+  }, []);
 
   const onClick = () => {
     if (isCorrect) {
@@ -47,7 +51,7 @@ const SixthPage = ({ history }) => {
   };
 
   return (
-    <PageWrapper>
+    <PageWrapper isImgLoaded={isImgLoaded}>
         <PageLayout text={contentText}>
           <ImageWrapper><img src={imageRebus} alt="" /></ImageWrapper>
           <InputFieldWithButton
