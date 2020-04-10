@@ -7,3 +7,4 @@ export { default as Button } from './Button';
 export { default as IconWithLabel } from './IconWithLabel';
 export { default as Modal } from './Modal';
 export { default as Overlay } from './Overlay';
+export { default as Dropdown } from './Dropdown/index';

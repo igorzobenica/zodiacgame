@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 const InputWrapper = styled.div`
   margin: 0 auto;
-  max-width: 75%;
+  max-width: ${props => props.width || '75%'};
 `
 
 const InputFieldWithButton = ({
+  type,
+  width,
   inputValue,
   setInputValue,
   label,
@@ -25,9 +27,9 @@ const InputFieldWithButton = ({
     setInputValue(value);
   };
   return (
-    <InputWrapper>
+    <InputWrapper width={width}>
       <Input
-        type="text"
+        type={type}
         value={inputValue}
         label={label}
         placeholder={placeholder}
@@ -39,6 +41,10 @@ const InputFieldWithButton = ({
       />
     </InputWrapper>
   );
+};
+
+InputFieldWithButton.defaultProps = {
+  type: 'text'
 };
 
 InputFieldWithButton.propTypes = {};

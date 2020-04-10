@@ -9,11 +9,11 @@ const TextWrapper = styled.div`
 
 const ParagraphText = ({
   children,
-  textArray,
+  text,
 }) => {
   return (
     <TextWrapper>
-      {textArray && textArray.map((text, index) => <Typo.p key={index}>{text}</Typo.p>)}
+      <Typo.p>{text}</Typo.p>
       {children}
     </TextWrapper>
   );

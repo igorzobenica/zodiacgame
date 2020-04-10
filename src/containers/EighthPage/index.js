@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_9_CONTENT_TEXT1, PAGE_9_CONTENT_TEXT, PAGE_9_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { Page1Background as image, Page1BackgroundSmall as imageSmall, Page9Rebus as imageRebus } from "../../ui/Background";
@@ -28,14 +28,11 @@ const InputWrapper = styled.div`
   }
 `
 
-const hintText = PAGE_9_HINT_TEXT;
-const contentText = PAGE_9_CONTENT_TEXT;
-const contentText1 = PAGE_9_CONTENT_TEXT1;
 const maxLength = 20;
 
-const correctAnswers = ['knife', 'byknife', 'by knife'];
-
 const EighthPage = ({ history }) => {
+  const { t } = useTranslation();
+  const correctAnswers = ['knife', t('common.byknife'), 'by knife'];
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -49,7 +46,7 @@ const EighthPage = ({ history }) => {
     if (isCorrect) {
       history.push(PAGE_9);
     } else {
-      setValidationError("wrong answer");
+      setValidationError(t('common.wrong_answer'));
     }
   };
   const onClickHint = () => {
@@ -60,14 +57,14 @@ const EighthPage = ({ history }) => {
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
-        <PageLayout text={contentText} image={imageRebus}>
-          <StyledParagraph>{contentText1}</StyledParagraph>
+        <PageLayout text={t('p8.main')} image={imageRebus}>
+          <StyledParagraph>{t('p8.sub')}</StyledParagraph>
           <InputWrapper>
             <Typo.p>by</Typo.p>
             <InputFieldWithButton
               inputValue={inputValue}
               setInputValue={setInputValue}
-              placeholder="Write your answer"
+              placeholder={t('common.placeholder')}
               maxLength={maxLength}
               validationError={validationError}
               setValidationError={setValidationError}
@@ -78,7 +75,7 @@ const EighthPage = ({ history }) => {
         <FooterButtons linkBack={PAGE_7} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
-      <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+      <HintsModal show={showModal} text={t('p8.hint')} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

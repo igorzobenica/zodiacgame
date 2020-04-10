@@ -1,16 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Modal, Typo } from "../../ui";
 
-const HintsModal = ({ show, text, setShowModal }) => {
+const HintsModal = ({ show, text, setShowModal, textCenter, children }) => {
   const onDismissHint = () => {
     setShowModal(false);
   };
 
   return (
     <Modal show={show} onDismiss={onDismissHint}>
-      <Modal.Body>
+      <Modal.Body textCenter={textCenter}>
         <Typo.p>{text}</Typo.p>
+        {children}
       </Modal.Body>
     </Modal>
   );

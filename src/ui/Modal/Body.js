@@ -4,13 +4,7 @@ import styled, { css } from 'styled-components';
 const spacing = '2.5rem 3.5rem';
 
 const CardBody = styled.div`
-  padding: ${spacing};
-
-  ${({ noPadding }) =>
-    noPadding &&
-    css`
-      padding: 0;
-    `};
+  padding: ${({ noPadding }) => noPadding ? '0' : spacing};
 `;
 
 CardBody.defaultProps = {
@@ -23,6 +17,11 @@ const Body = styled(CardBody)`
     css`
       max-height: 50vh;
       overflow-x: hidden;
+    `};
+  ${({ textCenter }) =>
+    textCenter &&
+    css`
+      text-align: center;
     `};
 `;
 

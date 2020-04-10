@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import PageLayout from "../../components/PageLayout";
 import InputFields from "./InputFields";
 import FooterButtons from "../../components/FooterButtons";
 import styled from 'styled-components';
-import { PAGE_3_HINT_TEXT } from '../constants';
 import { Page3Background as image, Page3BackgroundSmall as imageSmall } from "../../ui/Background";
 import HintModal from "../../components/HintsModal";
 import { PAGE_2, PAGE_4 } from "../../routeConstants";
@@ -14,13 +14,11 @@ const PageWrapper = styled.div`
   display: flex;
 `
 
-const hintText = PAGE_3_HINT_TEXT;
-
-const firstInputCorrectAnswers = ["yellow"];
-const secondInputCorrectAnswers = ["twenty one", "21"];
-const thirdInputCorrectAnswers = ["red"];
-
 const ThirdPage = ({ history }) => {
+  const { t } = useTranslation();
+  const firstInputCorrectAnswers = [t('common.yellow')];
+  const secondInputCorrectAnswers = [t('common.twenty_one'), "21"];
+  const thirdInputCorrectAnswers = [t('common.red')];
   const [firstInputValidationError, setFirstInputValidationError] = useState("");
   const [secondInputValidationError, setSecondInputValidationError] = useState("");
   const [thirdInputValidationError, setThirdInputValidationError] = useState("");
@@ -49,13 +47,13 @@ const ThirdPage = ({ history }) => {
       history.push(PAGE_4);
     } else {
       if (!isFirstCorrect) {
-        setFirstInputValidationError("wrong answer");
+        setFirstInputValidationError(t('common.wrong_answer'));
       }
       if (!isSecondCorrect) {
-        setSecondInputValidationError("wrong answer");
+        setSecondInputValidationError(t('common.wrong_answer'));
       }
       if (!isThirdCorrect) {
-        setThirdInputValidationError("wrong answer");
+        setThirdInputValidationError(t('common.wrong_answer'));
       }
     }
   };
@@ -94,13 +92,13 @@ const ThirdPage = ({ history }) => {
             setInputValues={setInputValues}
             setValidationErrors={setValidationErrors}
             isCorrect={isFirstCorrect && isSecondCorrect && isThirdCorrect}
-            onEnter={!hasEmptyValue && onClick}
+            onEnter={!hasEmptyValue ? onClick : null}
           />
         </PageLayout>
         <FooterButtons linkBack={PAGE_2} onClick={onClick} isDisabled={hasEmptyValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
-      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+      <HintModal show={showModal} text={t('p3.hint')} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

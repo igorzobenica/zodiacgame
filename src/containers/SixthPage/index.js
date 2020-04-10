@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_6_CONTENT_TEXT, PAGE_6_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from "styled-components";
 import { Page6Background as image, Page6BackgroundSmall as imageSmall, Page6Rebus as imageRebus } from "../../ui/Background";
@@ -22,13 +22,12 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const hintText = PAGE_6_HINT_TEXT;
-const contentText = PAGE_6_CONTENT_TEXT;
 const maxLength = 20;
 
 const correctAnswers = ["apollo twelve", "apollotwelve", "apollo 12", "apollo12", "apollo21"];
 
 const SixthPage = ({ history }) => {
+  const { t } = useTranslation();
   const [inputValue, setInputValue] = useState("");
   const [validationError, setValidationError] = useState("");
   const [showModal, setShowModal] = useState(false);
@@ -42,7 +41,7 @@ const SixthPage = ({ history }) => {
     if (isCorrect) {
       history.push(PAGE_7);
     } else {
-      setValidationError("wrong answer");
+      setValidationError(t('common.wrong_answer'));
     }
   };
 
@@ -52,12 +51,12 @@ const SixthPage = ({ history }) => {
 
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
-        <PageLayout text={contentText}>
+        <PageLayout text={t('p6.main')}>
           <ImageWrapper><img src={imageRebus} alt="" /></ImageWrapper>
           <InputFieldWithButton
             inputValue={inputValue}
             setInputValue={setInputValue}
-            placeholder="Write your answer"
+            placeholder={t('common.placeholder')}
             maxLength={maxLength}
             validationError={validationError}
             setValidationError={setValidationError}
@@ -70,7 +69,7 @@ const SixthPage = ({ history }) => {
           isDisabled={!inputValue}
           onClickHint={onClickHint}
         />
-        <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+        <HintsModal show={showModal} text={t('p6.hint')} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

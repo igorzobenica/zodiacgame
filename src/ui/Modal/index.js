@@ -12,6 +12,7 @@ const Card = styled.div`
   background-size: cover;
   height: 360px;
   width: 400px;
+  overflow: scroll;
 `;
 
 const Modal = ({ children, onExited, onDismiss, show }) => {

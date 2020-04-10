@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_5_CONTENT_TEXT, PAGE_5_HINT_TEXT } from "../constants";
 import CharInputFields from "../../components/CharInputFields";
 import styled from "styled-components";
 import HintModal from "../../components/HintsModal";
@@ -56,12 +56,10 @@ const TextWrapper = styled.div`
   }
 `;
 
-const hintText = PAGE_5_HINT_TEXT;
-const contentText = PAGE_5_CONTENT_TEXT;
-
 const correctAnswers = ["340"];
 
 const FifthPage = ({ history }) => {
+  const { t } = useTranslation();
   const [validationError, setValidationError] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [player, setPlayer] = useState();
@@ -76,7 +74,7 @@ const FifthPage = ({ history }) => {
     if (isCorrect) {
       history.push(PAGE_6);
     } else {
-      setValidationError("wrong!");
+      setValidationError(t('common.wrong'));
     }
   };
   const onClickPlay = () => {
@@ -93,7 +91,7 @@ const FifthPage = ({ history }) => {
     <PageWrapper isImgLoaded={isImgLoaded}>
       <ContentWrapper>
         <div>
-          <TextWrapper><Typo.p>{contentText}</Typo.p></TextWrapper>
+          <TextWrapper><Typo.p>{t('p5.main')}</Typo.p></TextWrapper>
         </div>
         <ImageWrapper>
           <div>
@@ -101,10 +99,10 @@ const FifthPage = ({ history }) => {
             <img src={tableImage} alt="" />
             <img src={tableImage} alt="" />
           </div>
-          <IconWithLabel onClick={onClickPlay} image={audioIcon} text="play sound"/>
+          <IconWithLabel onClick={onClickPlay} image={audioIcon} text={t('common.play_sound')}/>
         </ImageWrapper>
       </ContentWrapper>
-      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+      <HintModal show={showModal} text={t('p5.hint')} setShowModal={setShowModal}/>
         <PlayerWrapper hideVideo={true}><ReactPlayer url={AudioModulated} playing={playing} onEnded={onEnded} ref={component => setPlayer && (setPlayer(component))} controls={false} width='100%' height='100%'/></PlayerWrapper>
           <CharInputFields
             inputValues={[

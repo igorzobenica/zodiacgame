@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_7_CONTENT_TEXT, PAGE_7_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { Page1Background as image, Page1BackgroundSmall as imageSmall } from "../../ui/Background";
@@ -14,13 +14,11 @@ const PageWrapper = styled.div`
   display: flex;
 `
 
-const hintText = PAGE_7_HINT_TEXT;
-const contentText = PAGE_7_CONTENT_TEXT;
 const maxLength = 20;
 
-const correctAnswers = ['seven', '7'];
-
 const SeventhPage = ({ history }) => {
+  const { t } = useTranslation();
+  const correctAnswers = [t('common.seven'), '7'];
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -34,7 +32,7 @@ const SeventhPage = ({ history }) => {
     if (isCorrect) {
       history.push(PAGE_8);
     } else {
-      setValidationError("wrong answer");
+      setValidationError(t('common.wrong_answer'));
     }
   };
   const onClickHint = () => {
@@ -44,11 +42,11 @@ const SeventhPage = ({ history }) => {
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
-        <PageLayout text={contentText}>
+        <PageLayout text={t('p7.main')}>
           <InputFieldWithButton
             inputValue={inputValue}
             setInputValue={setInputValue}
-            placeholder="Write your answer"
+            placeholder={t('common.placeholder')}
             maxLength={maxLength}
             validationError={validationError}
             setValidationError={setValidationError}
@@ -58,7 +56,7 @@ const SeventhPage = ({ history }) => {
         <FooterButtons linkBack={PAGE_6} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
-      <HintsModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+      <HintsModal show={showModal} text={t('p7.hint')} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

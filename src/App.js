@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import {
+  PAGE_0,
   PAGE_1,
   PAGE_2,
   PAGE_3,
@@ -13,6 +14,7 @@ import {
   PAGE_9
 } from "./routeConstants";
 import {
+  StartPage,
   FirstPage,
   SecondPage,
   ThirdPage,
@@ -21,23 +23,25 @@ import {
   SixthPage,
   SeventhPage,
   EighthPage,
-  NinthPage
+  NinthPage,
 } from "./containers";
 
 function App() {
+  const base = '/:locale(en|es)';
   return (
     <Router>
       <Layout>
         <Switch>
-          <Route path={PAGE_9} exact component={NinthPage} />
-          <Route path={PAGE_8} exact component={EighthPage} />
-          <Route path={PAGE_7} exact component={SeventhPage} />
-          <Route path={PAGE_6} exact component={SixthPage} />
-          <Route path={PAGE_5} exact component={FifthPage} />
-          <Route path={PAGE_4} exact component={FourthPage} />
-          <Route path={PAGE_3} exact component={ThirdPage} />
-          <Route path={PAGE_2} exact component={SecondPage} />
-          <Route path={PAGE_1} exact component={FirstPage} />
+          <Route path={`${base}/${PAGE_9}`} exact component={NinthPage} />
+          <Route path={`${base}/${PAGE_8}`} exact component={EighthPage} />
+          <Route path={`${base}/${PAGE_7}`} exact component={SeventhPage} />
+          <Route path={`${base}/${PAGE_6}`} exact component={SixthPage} />
+          <Route path={`${base}/${PAGE_5}`} exact component={FifthPage} />
+          <Route path={`${base}/${PAGE_4}`} exact component={FourthPage} />
+          <Route path={`${base}/${PAGE_3}`} exact component={ThirdPage} />
+          <Route path={`${base}/${PAGE_2}`} exact component={SecondPage} />
+          <Route path={`${base}/${PAGE_1}`} exact component={FirstPage} />
+          <Route path={`/:locale(en|es)?${PAGE_0}`} exact component={StartPage} />
         </Switch>
       </Layout>
     </Router>

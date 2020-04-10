@@ -36,12 +36,6 @@ const InputOverlay = styled.div`
   }
 `;
 
-// const StyledImg = styled.img`
-//   position: absolute;
-//   top: 3rem;
-//   left: 1rem;
-// `;
-
 const ExtraInfoWrapper = styled.div`
   display: flex;
   justify-content: flex-end;

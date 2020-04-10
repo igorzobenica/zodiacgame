@@ -43,6 +43,7 @@ const Typo = {
     ${font()};
     line-height: 1.25;
     margin-top: 0;
+    white-space: pre-wrap;
     margin-bottom: ${({ noMargin }) => (noMargin ? '0' : spacing100)};
     text-align: ${({ textAlign }) => textAlign};
     text-decoration: ${({ textDecoration }) => textDecoration};

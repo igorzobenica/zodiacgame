@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import ParagraphText from '../../components/ParagraphText';
+import { useTranslation } from 'react-i18next';
+import {Typo} from '../../ui';
 import FooterButtons from "../../components/FooterButtons";
 import { loadImage } from "../../helpers/loadImage";
 import { PAGE_2 } from "../../routeConstants";
-import { PAGE_1_CONTENT_TEXT } from '../constants';
 import { Page1Background as image, Page1BackgroundSmall as imageSmall, Page1Logo as logo } from "../../ui/Background";
 
 const PageWrapper = styled.div`
@@ -29,9 +29,8 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const contentText = PAGE_1_CONTENT_TEXT;
-
 const FirstPage = props => {
+  const { t } = useTranslation();
   const [isImgLoaded, setIsImgLoaded] = useState(false)
   useEffect(() => {
     loadImage(image, setIsImgLoaded);
@@ -41,11 +40,9 @@ const FirstPage = props => {
       <ContentWrapper>
         <PageLayout>
           <ImageWrapper><img src={logo} alt="" /></ImageWrapper>
-          <ParagraphText
-            textArray={contentText}
-          />
+          <Typo.p>{t('p1.main')}</Typo.p>
         </PageLayout>
-        <FooterButtons justifyContent="flex-end" labelNext="take the challenge" linkNext={PAGE_2}/>
+        <FooterButtons justifyContent="flex-end" labelNext={t('p1.button')} linkNext={PAGE_2}/>
       </ContentWrapper>
     </PageWrapper>
   )

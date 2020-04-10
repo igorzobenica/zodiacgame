@@ -1,0 +1,78 @@
+{
+    "common": {
+        "terms_and_conditions": "Terms and Conditions",
+        "privacy_policy": "Privacy Policy",
+        "and": "and",
+        "back": "back",
+        "next": "next",
+        "submit": "submit",
+        "hint": "hint",
+        "placeholder": "write your answer",
+        "placeholder_email": "enter your email",
+        "wrong_answer": "wrong answer",
+        "wrong": "wrong",
+        "play_sound": "play sound",
+        "yellow": "yellow",
+        "twenty_one": "twenty one",
+        "red": "red",
+        "sky_valley": "sky valley",
+        "sky_valley_road": "sky valley road",
+        "sky_valley_rd": "sky valley rd",
+        "sky_valley_rd_dot": "sky valley rd.",
+        "seven": "seven",
+        "byknife": "byknife",
+        "english": "english",
+        "spanish": "spanish",
+        "select_country": "Select country",
+        "select_city": "Select city"
+    },
+    "p0": {
+        "title": "Like Father, Like Son",
+        "subtitle": "Online Riddle Game by Fox in a Box",
+        "main": "Welcome! He has been waiting for you...\nIt's been 40 years since the last time he's had a bit of fun, so he can't wait to play a little game with you.\nMake sure to read each page carefully, use a pen and paper and browse the internet in order to find the answers to all of his riddles.\nIf you are clever enough to outsmart him, there might just be something special waiting for you on the other side...",
+        "button": "play now",
+        "modal_text": "Choose game language?"
+    },
+    "p1": {
+        "main": "Hello,\nI’m sure you haven’t heard of me yet, but surely you know about my father.\nHe was a nightmare for California and San Francisco.\nHe was and still is the most feared and mysterious serial killer there ever was.\nAlthough he sent letters to the police, press and even had an interview, \nhe was never identified and he was never stopped. \nI will not let his work be forgotten and I will carry on his legacy myself. \n\nHowever, times have changed. Now, I challenge you to outsmart me! Do that and I will consider letting you live. Fail - and you will face my wrath!\n\nDo you dare to venture deep into my father's work?",
+        "button": "take the challenge"
+    },
+    "p2": {
+        "main": "I have found out that there is already a real life game that was inspired by my father’s work as well as my own. I find it amusing and worth a closer look.\n\nThis game can be difficult and scary for you, but it will be fun for me. I will challenge your mind, your perception, your wits and deduction. For me, this is just a game, but for you, the stakes are high… \nPay close attention to the video below."
+    },
+    "p3": {
+        "q1": "what color are my gloves?",
+        "q2": "what’s the number on the girl’s necklace?",
+        "q3": "what’s the color of the desk lamp?",
+        "hint": "Color of the gloves - 1:13\nNumber on the necklace - 3:02\nColor of the lamp - 2:04"
+    },
+    "p4": {
+        "main": "You have a keen eye…\n\nLet’s take a stroll down memory lane, shall we:\nWhen I was a kid my father used to take me on long drives near a lake. We always pulled over in two spots and paid respect to my father's work. Because, you see, it is in these two spots that he attacked some people and claimed their souls going completely <span>WIKI</span>d. The first site was David and Betty, the second Michael and Darlene.\n\nI want you to examine daddy’s favorite area a bit better. There are woods, creeks, lakes and roads. Some roads in this area are so small that they don’t even have a name.\nTell me, when you drive from the location of the first murder to the location of the second murder, what is the first named road you come across on your right?",
+        "hint": "The victims section on the Zodiac Killer Wikipedia page has the coordinates of each murder."
+    },
+    "p5": {
+        "main": "Congratulations. You’re getting familiar with the work of my father as well as my own. I want you to learn more about my daddy. His work deserves praise.\nI remember him talking to himself, saying numbers and knocking on the table, like a madman. I was so impressed. Once, he asked me to draw what he was saying. Can you do that for me?\nOr do it for yourself if it makes it easier...\n\nDon’t forget to get a piece of paper and a pen.",
+        "hint": "Mark the fields you hear in the audio, if you focus on the unmarked fields they will spell a digit. Repeat for the other two numbers."
+    },
+    "p6": {
+        "main": "Correct, 340… A few decades ago, daddy wrote a cipher which was later labeled with that number. The police, the press, the public... No one could break it.\n\nI guess you know what your challenge is. Go!",
+        "hint": "Search for a picture of Cipher 340 and “combine” it with the encrypted message."
+    },
+    "p7": {
+        "main": "Daddy was a celebrity of a sort.\nI can remember that only two days before Apollo 12 was launched, a local newspaper published an article about daddy’s letter written to the public.\nHe sent the letter with the purpose to let everyone know how many people he had killed.\n\nHow many victims did he claim at that moment?",
+        "hint": "Figuring out the date when the newspaper published the article is a good start. From there, search for a picture of the article published on that date."
+    },
+    "p8": {
+        "main": "That's right he was writing letters to San Francisco Chronicle as well as to the police and TV station. But once he left a different kind of message...",
+        "sub": "How were they killed?",
+        "hint": "Search Zodiac car door"
+    },
+    "p9": {
+        "main": "Congratulations, you have a sharp mind.\nYou’ve proven yourself resourceful and capable of solving all sorts of mental challenges.\nSo, I will let you live, for now…\nIn fact, I’m so impressed that I want to give you a special gift…\nFollow the link below to see what I have in store for you.\nYou might even get the chance to meet me in person…",
+        "sub": "please select the country and city closest to you",
+        "button_yes": "Yes, I want my gift",
+        "button_no": "No, thank you",
+        "modal_opt_out": "You may opt out ant time.",
+        "modal_email_validation": "Please enter a valid email"
+    }
+}

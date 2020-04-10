@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
+import { useTranslation } from 'react-i18next';
 import InputFieldWithButton from '../../components/InputFieldWithButton';
 import { MEDIA_SMALL } from "../../ui/theme/tokens/breakpoints";
 
@@ -19,23 +20,6 @@ const InputFieldsWrapper = styled.div`
 `;
 
 const maxLength = 20;
-const inputFieldsData = [
-  {
-    id: 1,
-    label: 'what color are my gloves?',
-    placeholder: 'write your answer',
-  },
-  {
-    id: 2,
-    label: 'what’s the number on the girl’s necklace?',
-    placeholder: 'write your answer',
-  },
-  {
-    id: 3,
-    label: 'what’s the color of the desk lamp?',
-    placeholder: 'write your answer',
-  },
-];
 
 const InputFields = ({
   validationErrors,
@@ -45,17 +29,31 @@ const InputFields = ({
   isCorrect,
   onEnter
 }) => {
+  const { t } = useTranslation();
+  const inputFieldsData = [
+    {
+      id: 1,
+      label: t('p3.q1')
+    },
+    {
+      id: 2,
+      label: t('p3.q2')
+    },
+    {
+      id: 3,
+      label: t('p3.q3')
+    },
+  ];
   return (
     <InputFieldsWrapper>
       {inputFieldsData.map(({
         id,
         label,
-        placeholder,
       }) => (
         <div key={id}>
           <InputFieldWithButton
             label={label}
-            placeholder={placeholder}
+            placeholder={t('common.placeholder')}
             maxLength={maxLength}
             isCorrect={isCorrect}
             inputValue={inputValues[id]}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
-import { PAGE_4_CONTENT_TEXT, PAGE_4_HINT_TEXT } from "../constants";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from 'styled-components';
 import { loadImage } from "../../helpers/loadImage";
@@ -14,13 +14,16 @@ background-image: url(${props => props.isImgLoaded ? image : imageSmall});
 display: flex;
 `
 
-const hintText = PAGE_4_HINT_TEXT;
-const contentText = PAGE_4_CONTENT_TEXT;
 const maxLength = 20;
 
-const correctAnswers = ['sky valley', 'sky valley road', 'sky valley rd', 'sky valley rd.'];
-
 const FourthPage = ({ history }) => {
+  const { t } = useTranslation();
+  const correctAnswers = [
+    t('common.sky_valley'),
+    t('common.sky_valley_road'),
+    t('common.sky_valley_rd'),
+    t('common.sky_valley_rd_dot'),
+  ];
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -30,7 +33,7 @@ const FourthPage = ({ history }) => {
     if (isCorrect) {
       history.push(PAGE_5);
     } else {
-      setValidationError("wrong answer");
+      setValidationError(t('common.wrong_answer'));
     }
   };
   const onClickHint = () => {
@@ -43,11 +46,11 @@ const FourthPage = ({ history }) => {
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
       <div>
-        <PageLayout text={contentText}>
+        <PageLayout text={t('p4.main')}>
           <InputFieldWithButton
             inputValue={inputValue}
             setInputValue={setInputValue}
-            placeholder="Write your answer"
+            placeholder={t('common.placeholder')}
             maxLength={maxLength}
             validationError={validationError}
             setValidationError={setValidationError}
@@ -57,7 +60,7 @@ const FourthPage = ({ history }) => {
         <FooterButtons linkBack={PAGE_3} onClick={onClick} isDisabled={!inputValue} onClickHint={onClickHint}/>
       </div>
       <div></div>
-      <HintModal show={showModal} text={hintText} setShowModal={setShowModal}/>
+      <HintModal show={showModal} text={t('p4.hint')} setShowModal={setShowModal}/>
     </PageWrapper>
   );
 };

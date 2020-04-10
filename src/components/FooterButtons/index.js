@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Button } from '../../ui';
@@ -19,16 +20,17 @@ const FooterButtons = ({
   onClickHint,
   isDisabled,
 }) => {
+  const { t } = useTranslation();
   return (
     <Wrapper justifyContent={justifyContent}>
       {linkBack && <Button as={Link} to={linkBack}>
-        back
+        {t('common.back')}
       </Button>}
       {onClickHint && <Button onClick={onClickHint}>
-        hint
+        {t('common.hint')}
       </Button>}
       {(linkNext || onClick) && <Button as={!onClick && Link} to={linkNext} onClick={onClick} disabled={isDisabled}>
-        {labelNext}
+        {labelNext || t('common.submit')}
       </Button>}
     </Wrapper>
   );
@@ -41,7 +43,6 @@ FooterButtons.propTypes = {
 
 FooterButtons.defaultProps = {
   justifyContent: 'space-around',
-  labelNext: 'submit',
   isDisabled: false,
 };
 
