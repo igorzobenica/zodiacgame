@@ -48,7 +48,7 @@ const StatusMessage = styled.div`
   text-align: center;
   flex-grow: 1;
   justify-self: start;
-  margin-top: 0.5rem;
+  margin-top: -1.5rem;
 `;
 
 const Input = React.forwardRef(

@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-const defaultFont = 'Silka, Zipher, Spooky, sans-serif';
+const defaultFont = 'Silka, ZK, Zipher, Spooky, sans-serif';
 const defaultSize = '1.5rem';
 const defaultColor = '#000000';
 

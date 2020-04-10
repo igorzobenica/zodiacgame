@@ -4,7 +4,7 @@ import PageLayout from "../../components/PageLayout";
 import FooterButtons from "../../components/FooterButtons";
 import InputFieldWithButton from "../../components/InputFieldWithButton";
 import styled from "styled-components";
-import { Page6Background as image, Page6BackgroundSmall as imageSmall, Page6Rebus as imageRebus } from "../../ui/Background";
+import { Page6Background as image, Page6BackgroundSmall as imageSmall, Page6Rebus as imageRebus, Page6Hint as imageHint } from "../../ui/Background";
 import { PAGE_5, PAGE_7 } from "../../routeConstants";
 import HintsModal from "../../components/HintsModal";
 import { loadImage } from "../../helpers/loadImage";
@@ -17,6 +17,14 @@ const PageWrapper = styled.div`
 const ImageWrapper = styled.div`
   margin: 1rem -1rem;
   box-shadow: 0px 0px 20px 5px #777;
+  > img {
+    max-width: 100%;
+  }
+`;
+
+const HintImageWrapper = styled.div`
+  max-width: 70%;
+  margin: 0 auto;
   > img {
     max-width: 100%;
   }
@@ -69,7 +77,9 @@ const SixthPage = ({ history }) => {
           isDisabled={!inputValue}
           onClickHint={onClickHint}
         />
-        <HintsModal show={showModal} text={t('p6.hint')} setShowModal={setShowModal}/>
+        <HintsModal show={showModal} text={t('p6.hint')} setShowModal={setShowModal}>
+          <HintImageWrapper><img src={imageHint} alt="" /></HintImageWrapper>
+        </HintsModal>
     </PageWrapper>
   );
 };

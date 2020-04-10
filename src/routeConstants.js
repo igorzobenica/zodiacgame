@@ -1,4 +1,3 @@
-export const PAGE_0 = "/"
 export const PAGE_1 = "d0QJMuVHJK"
 export const PAGE_2 = "we9N11NJso"
 export const PAGE_3 = "YHR1IG2x5h"

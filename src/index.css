@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'Spooky';
-  src: local('Spooky'), url(./fonts/SpookyvhboldRegular-p6Xy.ttf) format('truetype');
+  font-family: 'ZK';
+  src: local('ZK'), url(./fonts/ZK_Regular.ttf) format('truetype');
 }
 
 body {

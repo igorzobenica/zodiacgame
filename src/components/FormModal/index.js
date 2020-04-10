@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Modal, Typo, Button } from "../../ui";
 import { sendEmail } from "../../helpers/sendEmail";
 import InputFieldWithButton from "../InputFieldWithButton";
+import { getLanguageFromPathId } from "../../helpers/getLanguageFromPath";
 
 const StyledText = styled(Typo.p)`
   font-size: 1rem;
@@ -20,6 +21,7 @@ const ButtonsWrapper = styled.div`
 
 const HintsModal = ({ show, setShowModal, location }) => {
   const { t } = useTranslation();
+  const [showMessage, setShowMessage] = useState(false);
   const [validationError, setValidationError] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const isCorrectEmail = () => {
@@ -31,7 +33,9 @@ const HintsModal = ({ show, setShowModal, location }) => {
   };
   const onClick = () => {
     if (isCorrectEmail()) {
-      sendEmail(location, 1, inputValue);
+      const langId = getLanguageFromPathId();
+      sendEmail(location, langId, inputValue);
+      setShowMessage(true);
     } else {
       setValidationError(t('p9.modal_email_validation'));
     }
@@ -40,28 +44,41 @@ const HintsModal = ({ show, setShowModal, location }) => {
   return (
     <Modal show={show} onDismiss={onDismissHint}>
       <Modal.Body autoSize>
-        <Typo.p>{t("p9.sub")}</Typo.p>
-        <InputFieldWithButton
-          type="email"
-          width="100%"
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          placeholder={t("common.placeholder_email")}
-          validationError={validationError}
-          setValidationError={setValidationError}
-          onEnter={inputValue && onClick}
-        />
-        <ButtonsWrapper>
-          <Button onClick={onClick}>{t('common.submit')}</Button>
-        </ButtonsWrapper>
-        <StyledText>
-          {t("p9.modal_opt_out")}{" "}
-          <StyledLink href={`${location}/tos`} target="_blank">
-            {t("common.terms_and_conditions")}
-          </StyledLink>{" "}
-          {t("common.and")}{" "}
-          <StyledLink href={`${location}/privacy`} target="_blank">{t("common.privacy_policy")}</StyledLink>
-        </StyledText>
+        {showMessage &&
+          <>
+            <Typo.p>{t("p9.modal_thank_you_message")}{'\n'}
+              <StyledLink href="https://foxinabox.re/franchise">
+                {t("common.go_back_to_homepage")}
+              </StyledLink>
+            </Typo.p>
+          </>
+        }
+        {!showMessage &&
+          <>
+            <Typo.p>{t("p9.modal_email_message")}</Typo.p>
+            <InputFieldWithButton
+              type="email"
+              width="100%"
+              inputValue={inputValue}
+              setInputValue={setInputValue}
+              placeholder={t("common.placeholder_email")}
+              validationError={validationError}
+              setValidationError={setValidationError}
+              onEnter={inputValue && onClick}
+            />
+            <ButtonsWrapper>
+              <Button onClick={onClick}>{t('common.submit')}</Button>
+            </ButtonsWrapper>
+            <StyledText>
+              {t("p9.modal_opt_out")}{" "}
+              <StyledLink href={`${location}/tos`} target="_blank">
+                {t("common.terms_and_conditions")}
+              </StyledLink>{" "}
+              {t("common.and")}{" "}
+              <StyledLink href={`${location}/privacy`} target="_blank">{t("common.privacy_policy")}</StyledLink>
+            </StyledText>
+          </>
+        }
       </Modal.Body>
     </Modal>
   );

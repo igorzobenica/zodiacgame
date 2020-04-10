@@ -24,14 +24,15 @@
         "english": "english",
         "spanish": "spanish",
         "select_country": "Select country",
-        "select_city": "Select city"
+        "select_city": "Select city",
+        "go_back_to_homepage": "go back to homepage"
     },
     "p0": {
         "title": "Like Father, Like Son",
         "subtitle": "Online Riddle Game by Fox in a Box",
         "main": "Welcome! He has been waiting for you...\nIt's been 40 years since the last time he's had a bit of fun, so he can't wait to play a little game with you.\nMake sure to read each page carefully, use a pen and paper and browse the internet in order to find the answers to all of his riddles.\nIf you are clever enough to outsmart him, there might just be something special waiting for you on the other side...",
         "button": "play now",
-        "modal_text": "Choose game language?"
+        "modal_text": "Choose game language"
     },
     "p1": {
         "main": "Hello,\nI’m sure you haven’t heard of me yet, but surely you know about my father.\nHe was a nightmare for California and San Francisco.\nHe was and still is the most feared and mysterious serial killer there ever was.\nAlthough he sent letters to the police, press and even had an interview, \nhe was never identified and he was never stopped. \nI will not let his work be forgotten and I will carry on his legacy myself. \n\nHowever, times have changed. Now, I challenge you to outsmart me! Do that and I will consider letting you live. Fail - and you will face my wrath!\n\nDo you dare to venture deep into my father's work?",
@@ -68,11 +69,14 @@
         "hint": "Search Zodiac car door"
     },
     "p9": {
-        "main": "Congratulations, you have a sharp mind.\nYou’ve proven yourself resourceful and capable of solving all sorts of mental challenges.\nSo, I will let you live, for now…\nIn fact, I’m so impressed that I want to give you a special gift…\nFollow the link below to see what I have in store for you.\nYou might even get the chance to meet me in person…",
-        "sub": "please select the country and city closest to you",
+        "main": "Congratulations, you have a sharp mind.\nYou’ve proven yourself resourceful and capable of solving all sorts of mental challenges.\nSo, I will let you live, for now…\nIn fact, I’m so impressed that I want to give you a special gift…\nLeave your email address below if you want to see what I have in store for you.\nYou might even get the chance to meet me in person…",
+        "yes_message": "please select the country and city closest to you",
+        "no_message": "Sorry to hear that you are afraid of me. But I can understand, I have dirty hands..\nWhen you think you’re brave enough, just visit me!",
         "button_yes": "Yes, I want my gift",
         "button_no": "No, thank you",
         "modal_opt_out": "You may opt out ant time.",
-        "modal_email_validation": "Please enter a valid email"
+        "modal_email_validation": "Please enter a valid email",
+        "modal_email_message": "your present is one step away",
+        "modal_thank_you_message": "thank you for submitting your email, expect something nice in your inbox soon."
     }
 }

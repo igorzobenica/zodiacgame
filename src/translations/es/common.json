@@ -1,11 +1,14 @@
 {
     "common": {
+        "terms_and_conditions": "Términos y Condiciones",
+        "privacy_policy": "Política de Privacidad",
+        "and": "y",
         "back": "atrás",
         "next": "siguiente",
         "submit": "enviar",
         "hint": "pista",
         "placeholder": "escribe tu respuesta",
-        "placeholder_email": "enter your email",
+        "placeholder_email": "inserta tu email",
         "wrong_answer": "respuesta incorrecta",
         "wrong": "incorrecto",
         "play_sound": "reproducir sonido",
@@ -17,13 +20,19 @@
         "sky_valley_rd": "sky valley rd",
         "sky_valley_rd_dot": "calle sky valley",
         "seven": "siete",
-        "byknife": "cuchillo"
+        "byknife": "cuchillo",
+        "english": "inglés",
+        "spanish": "español",
+        "select_country": "Elige País",
+        "select_city": "Elige Ciudad",
+        "go_back_to_homepage": "volver a la página principal"
     },
     "p0": {
-        "title": "Like Father, Like Son",
-        "subtitle": "Online Riddle Game by Fox in a Box",
-        "main": "Welcome! He has been waiting for you... It's been 40 years since the last time he's had a bit of fun, so he can't wait to play a little game with you. Make sure to read each page carefully, use a pen and paper and browse the internet in order to find the answers to all of his riddles. If you are clever enough to outsmart him, there might just be something special waiting for you on the other side...",
-        "button": "play now"
+        "title": "de tal palo, tal astilla",
+        "subtitle": "Juego de adivinanzas en línea de Fox in a Box",
+        "main": "¡Bienvenido! Te ha estado esperando...\nHan pasado 40 años desde la última vez que se lo pasó tan bien, esta deseando jugar un pequeño jueguecito contigo.\nAsegúrate de leer todas las paginas detenidamente, podrás usar papel y boli y navegar internet para buscar soluciones a todos sus arcanos.\nEn el improbable caso de que seas mas listo que él, tal vez haya algo especial esperándote al otro lado...",
+        "button": "Jugar",
+        "modal_text": "Elige idioma"
     },
     "p1": {
         "main": "Hola,\n\nEstoy seguro que no me conoces todavía, pero seguramente has oído hablar de mi padre.\nEl fue una pesadilla para San Francisco y todo California.\nEl fue y aún es, el asesino serial más misterioso y temido de todos los tiempos.\nAunque mandaba cartas a la policía, a la prensa e incluso hizo una entrevista, él nunca fue identificado y nunca lo detuvieron.\nYo no dejaré que esto se olvide y voy a llevar su legado conmigo.\nSin embargo, los tiempos han cambiado y ¡ahora tendrás que ser más listo que yo! Si lo logras, consideraré dejarte vivir.\nSi no lo logras… ya sabes como termina esta historia...\n¿Te atreves a adentrarte en la mente de mi padre?",
@@ -60,9 +69,14 @@
         "hint": "busca “asesino zodiac puerta carro"
     },
     "p9": {
-        "main": "Felicidades, tienes una mente fuerte aún.\n\nHas probado que sabes usar tus recursos y que eres capaz de resolver todo tipo de retos mentales.\n\nAsí que te dejaré vivir.. por ahora…\n\nDe hecho, estoy tan impresionado, que te quiero dar un regalo especial…\n\nDa click aquí para obtenerlo.\n\nIncluso puede que tengas oportunidad de conocerme en persona…",
-        "sub": "Tengo un regalo para ti, así que deja tu correo electrónico",
-        "button_yes": "Sí por favor",
-        "button_no": "No gracias"
+        "main": "Felicidades, tienes una mente fuerte aún.\n\nHas probado que sabes usar tus recursos y que eres capaz de resolver todo tipo de retos mentales.\n\nAsí que te dejaré vivir.. por ahora…\n\nDe hecho, estoy tan impresionado, que te quiero dar un regalo especial…\n\nDejanos tu email para poder informarte de más actividades.\n\nIncluso puede que tengas oportunidad de conocerme en persona…",
+        "yes_message": "por favor, elige país y ciudad mas cercana a ti",
+        "no_message": "Una pena que me tengas miedo. Pero lo comprendo, mis manos están manchadas.\nCuando reúnas el valor que se requiere, ¡ven a verme!",
+        "button_yes": "Si, quiero mi regalo",
+        "button_no": "No, gracias",
+        "modal_opt_out": "Puedes salir en cualquier momento.",
+        "modal_email_validation": "Por favor, inserta un email válido",
+        "modal_email_message": "Tu regalo está a un click de distancia",
+        "modal_thank_you_message": "Gracias, en breve te llegará algo al email."
     }
 }

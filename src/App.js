@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import {
-  PAGE_0,
   PAGE_1,
   PAGE_2,
   PAGE_3,
@@ -41,7 +40,7 @@ function App() {
           <Route path={`${base}/${PAGE_3}`} exact component={ThirdPage} />
           <Route path={`${base}/${PAGE_2}`} exact component={SecondPage} />
           <Route path={`${base}/${PAGE_1}`} exact component={FirstPage} />
-          <Route path={`/:locale(en|es)?${PAGE_0}`} exact component={StartPage} />
+          <Route path={`/:locale(en|es)?`} exact component={StartPage} />
         </Switch>
       </Layout>
     </Router>

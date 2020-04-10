@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import {Typo, Button} from '../../ui';
 import HintModal from "../../components/HintsModal";
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
+import { getLanguageFromPath } from "../../helpers/getLanguageFromPath";
 import { loadImage } from "../../helpers/loadImage";
 import { EN, ES } from "../constants";
 import { PAGE_1 } from "../../routeConstants";
@@ -32,16 +33,19 @@ const ButtonsWrapper = styled.div`
 const StartPage = ({history, ...props}) => {
   const { t, i18n } = useTranslation();
   const [isImgLoaded, setIsImgLoaded] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   useEffect(() => {
     loadImage(image, setIsImgLoaded);
   }, []);
   const onClick = () => {
-    setShowModal(true);
+    const lang = getLanguageFromPath() || 'en';
+    history.push(`/${lang}/${PAGE_1}`);
   };
   const onClickLanguage = (lang) => {
+    // Cookies.set('language', lang);
     i18n.changeLanguage(lang);
-    history.push(`${lang}/${PAGE_1}`);
+    history.replace(`/${lang}`);
+    setShowModal(false)
   };
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
@@ -53,8 +57,8 @@ const StartPage = ({history, ...props}) => {
       </PageLayout>
       <HintModal show={showModal} text={t('p0.modal_text')} setShowModal={setShowModal} textCenter={true}>
         <ButtonsWrapper>
-          <Button onClick={() => {Cookies.set('language', EN);onClickLanguage(EN)}}>{t('common.english')}</Button>
-          <Button onClick={() => {Cookies.set('language', ES);onClickLanguage(ES)}}>{t('common.spanish')}</Button>
+          <Button onClick={() => {onClickLanguage(EN)}}>{t('common.english')}</Button>
+          <Button onClick={() => {onClickLanguage(ES)}}>{t('common.spanish')}</Button>
         </ButtonsWrapper>
       </HintModal>
     </PageWrapper>
