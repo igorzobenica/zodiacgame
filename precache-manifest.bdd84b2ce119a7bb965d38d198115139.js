@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f22377abca726d5801e58beab50adf4",
+    "revision": "0c71c9150d129433aa0282ec29c59f6b",
     "url": "/zodiacgame/index.html"
   },
   {
-    "revision": "9a32cd21ed77afa5af2e",
-    "url": "/zodiacgame/static/css/main.a934912d.chunk.css"
+    "revision": "81a143feb8866b625269",
+    "url": "/zodiacgame/static/css/main.952bc616.chunk.css"
   },
   {
-    "revision": "32d90744698c3092879d",
-    "url": "/zodiacgame/static/js/2.fd7a255a.chunk.js"
+    "revision": "e8250a9dc9b2f40c51cc",
+    "url": "/zodiacgame/static/js/2.96af6d10.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/zodiacgame/static/js/2.fd7a255a.chunk.js.LICENSE.txt"
+    "revision": "6b3248a1692933689dcb27b9e1ed5092",
+    "url": "/zodiacgame/static/js/2.96af6d10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a32cd21ed77afa5af2e",
-    "url": "/zodiacgame/static/js/main.de53688c.chunk.js"
+    "revision": "81a143feb8866b625269",
+    "url": "/zodiacgame/static/js/main.a3ebc7ec.chunk.js"
   },
   {
     "revision": "86005c0ca59903eaf087",
@@ -72,16 +72,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zodiacgame/static/media/Page_6_background_small.209fdbc4.png"
   },
   {
-    "revision": "59638e7448ced84b0ca7707e6dfe0239",
-    "url": "/zodiacgame/static/media/Page_6_rebus.59638e74.png"
+    "revision": "fedb1911235b93bd94cfd2272838da4a",
+    "url": "/zodiacgame/static/media/Page_6_hint.fedb1911.png"
+  },
+  {
+    "revision": "b2ba61dc78e3c9f4e55cb78bd5829dea",
+    "url": "/zodiacgame/static/media/Page_6_rebus.b2ba61dc.png"
+  },
+  {
+    "revision": "eafc8d75d9ad7bdf6644ca9851cbedad",
+    "url": "/zodiacgame/static/media/Page_9_background.eafc8d75.png"
+  },
+  {
+    "revision": "11c1047f44fc0d7b3fef07dde65f20fb",
+    "url": "/zodiacgame/static/media/Page_9_background_small.11c1047f.png"
   },
   {
     "revision": "ed08774cbb4d6ed2d9fc75be0bf7b16e",
     "url": "/zodiacgame/static/media/Page_9_rebus.ed08774c.png"
   },
   {
-    "revision": "4830266d6c64c705fc8c2d34220b4d24",
-    "url": "/zodiacgame/static/media/SpookyvhboldRegular-p6Xy.4830266d.ttf"
+    "revision": "beaa03153288ba2d998f879e455e059c",
+    "url": "/zodiacgame/static/media/ZK_Regular.beaa0315.ttf"
   },
   {
     "revision": "034049156ccef0a1c8a43ede76b0aad2",
