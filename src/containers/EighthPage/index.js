@@ -64,7 +64,7 @@ const EighthPage = ({ history }) => {
             <InputFieldWithButton
               inputValue={inputValue}
               setInputValue={setInputValue}
-              placeholder={t('common.placeholder')}
+              placeholder={t('p8.placeholder')}
               maxLength={maxLength}
               validationError={validationError}
               setValidationError={setValidationError}

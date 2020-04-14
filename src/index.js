@@ -10,6 +10,7 @@ import { getLanguageFromPath } from "./helpers/getLanguageFromPath";
 import i18next from "i18next";
 import Cookies from 'js-cookie';
 import common_es from "./translations/es/common.json";
+import common_es_mx from "./translations/es/mx/common.json";
 import common_en from "./translations/en/common.json";
 
 const language = Cookies.get('language');
@@ -25,6 +26,9 @@ i18next.use(detector).init({
     },
     es: {
       common: common_es
+    },
+    mx: {
+      common: common_es_mx
     }
   }
 });

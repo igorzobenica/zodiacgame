@@ -6,10 +6,9 @@ import HintModal from "../../components/HintsModal";
 // import Cookies from 'js-cookie';
 import { getLanguageFromPath } from "../../helpers/getLanguageFromPath";
 import { loadImage } from "../../helpers/loadImage";
-import { EN, ES } from "../constants";
+import { EN, ES, MX } from "../../constants";
 import { PAGE_1 } from "../../routeConstants";
 import { Page2Background as image, Page2BackgroundSmall as imageSmall } from "../../ui/Background";
-import { MEDIA_SMALL } from '../../ui/theme/tokens/breakpoints';
 
 const PageWrapper = styled.div`
   background-image: url(${props => props.isImgLoaded ? image : imageSmall});
@@ -21,12 +20,9 @@ const PageLayout = styled.div`
 `;
 
 const ButtonsWrapper = styled.div`
-  @media (min-width: ${MEDIA_SMALL}px) {
-    button {
-      &:last-child {
-        margin-left: 2rem;
-      }
-    }
+  button {
+    display: block;
+    margin: 0 auto;
   }
 `;
 
@@ -59,6 +55,7 @@ const StartPage = ({history, ...props}) => {
         <ButtonsWrapper>
           <Button onClick={() => {onClickLanguage(EN)}}>{t('common.english')}</Button>
           <Button onClick={() => {onClickLanguage(ES)}}>{t('common.spanish')}</Button>
+          <Button onClick={() => {onClickLanguage(MX)}}>{`${t('common.spanish')}(${t('common.mexico')})`}</Button>
         </ButtonsWrapper>
       </HintModal>
     </PageWrapper>

@@ -3,18 +3,20 @@
         "terms_and_conditions": "Términos y Condiciones",
         "privacy_policy": "Política de Privacidad",
         "and": "y",
-        "back": "atrás",
-        "next": "siguiente",
-        "submit": "enviar",
-        "hint": "pista",
-        "placeholder": "escribe tu respuesta",
+        "back": "tenemos miedo",
+        "next": "somos valientes",
+        "submit": "adelante",
+        "hint": "¡¡ayuda!!",
+        "placeholder": "escribid vuestra respuesta",
         "placeholder_email": "inserta tu email",
         "wrong_answer": "respuesta incorrecta",
         "wrong": "incorrecto",
         "play_sound": "reproducir sonido",
         "yellow": "amarillos",
+        "yellow2": "amarillo",
         "twenty_one": "veintiuno",
         "red": "roja",
+        "red2": "rojo",
         "sky_valley": "sky valley",
         "sky_valley_road": "sky valley road",
         "sky_valley_rd": "sky valley rd",
@@ -23,6 +25,7 @@
         "byknife": "cuchillo",
         "english": "inglés",
         "spanish": "español",
+        "mexico": "méxico",
         "select_country": "Elige País",
         "select_city": "Elige Ciudad",
         "go_back_to_homepage": "volver a la página principal"
@@ -35,41 +38,42 @@
         "modal_text": "Elige idioma"
     },
     "p1": {
-        "main": "Hola,\n\nEstoy seguro que no me conoces todavía, pero seguramente has oído hablar de mi padre.\nEl fue una pesadilla para San Francisco y todo California.\nEl fue y aún es, el asesino serial más misterioso y temido de todos los tiempos.\nAunque mandaba cartas a la policía, a la prensa e incluso hizo una entrevista, él nunca fue identificado y nunca lo detuvieron.\nYo no dejaré que esto se olvide y voy a llevar su legado conmigo.\nSin embargo, los tiempos han cambiado y ¡ahora tendrás que ser más listo que yo! Si lo logras, consideraré dejarte vivir.\nSi no lo logras… ya sabes como termina esta historia...\n¿Te atreves a adentrarte en la mente de mi padre?",
-        "button": "acepto el reto"
+        "main": "Hola,\n\nEstoy seguro de que no me conocéis todavía pero probablemente hayáis oído hablar de mi padre.\nFue una pesadilla para la ciudad de San Francisco y para toda California.\nA día de hoy, en EEUU, todavía se le conoce como el asesino en serie más misterioso y temido de todos los tiempos.\nA pesar de que mandaba cartas a la policía y a la prensa, nunca fue identificado y jamás lo detuvieron.\nMe enseñó tantas cosas que he decidido continuar con su legado.\nSin embargo, los tiempos han cambiado y ¡ahora tendréis que ser más listos que yo! Si lo lográis, consideraré dejaros vivir.\nSi no lo conseguís… ya sabéis cómo termina esta historia...\n¿Os atrevéis a adentraros en la mente de mi padre?",
+        "button": "aceptamos el reto"
     },
     "p2": {
-        "main": "Me he enterado que ya existe un juego de escape inspirado en el trabajo de mi padre y mío. Me parece excelente y creo que voy a visitarlo pronto.\n\nEste juego puede ser difícil y te puede dar un poco de miedo, pero yo me voy a divertir muchísimo. Voy a retar a tu mente, tu percepción, tu lógica y tu concentración. Para mi esto es solo un juego, pero para ti, hay mucho en juego…\n\nPon mucha atención al video."
+        "main": "Me he enterado de que ya existe un juego de escape inspirado en el trabajo de mi padre. Me parece excelente y creo que voy a visitarlo pronto.\n\nEste reto puede ser difícil y os puede dar un poco de miedo, pero yo me voy a divertir muchísimo. Voy a desafiar vuestras mentes, vuestra percepción, lógica y concentración. Para mí, esto es solo un juego, pero, para vosotros, hay mucho en juego…\n\nPrestad mucha atención al vídeo."
     },
     "p3": {
-        "q1": "¿De qué color son mis guantes?",
-        "q2": "¿Cuál es el número en el collar de la chica?",
-        "q3": "¿De qué color es la lámpara sobre el escritorio?",
+        "q1": "Como veréis, no me gusta ensuciarme las manos… Siempre utilizo guantes del mismo color.",
+        "q2": "¿Cuántos años tiene mi víctima? Qué collar más bonito...",
+        "q3": "¿Habéis visto qué lámpara de escritorio tan bonita? La pinté de mi color favorito.",
         "hint": "Color de los guantes 1:13\nNúmero en el collar 3:02\nColor de la lámpara 2:04"
     },
     "p4": {
-        "main": "Mmm… tienes buen ojo…\n\nVamos a regresar un poco en el tiempo, ¿vale?\nCuando era pequeño, papá me llevaba en el auto al lago. Siempre hacía una parada en dos lugares especiales para el… lugares donde había matado algunas personas y había tomado sus almas para apropiárselas.\nEl primer lugar era David & Betty, el segundo Michael & Darlene.\n\nAhora quiero que examines los lugares favoritos de papá.. hay bosque, lagos y caminos. Algunas calles en esta área son tan pequeñas que ni tienen nombre.\nAhora dime, cuando manejas desde la ubicación del primer asesinato a la ubicación del segundo asesinato, ¿cuál es la primera calle que pasas a tu lado derecho?",
-        "hint": "La sección de víctimas en Asesino del Zodiaco en Wikipedia contiene los lugares de los asesinatos."
+        "main": "Me habéis sorprendido víctimas... Tenéis buen ojo.\n\nVamos a regresar un poco en el tiempo, ¿os parece?\nCuando era pequeño, papá me llevaba en coche al lago. Siempre hacía una parada en dos lugares especiales para él, lugares donde había matado a algunas personas.\nEn el primer lugar, asesinó a David & Betty; en el segundo, a Michael & Darlene.\n\nAhora quiero que examinéis los lugares favoritos de papá... Hay bosque, lagos y caminos. Algunas calles en esta área son tan pequeñas que ni tienen nombre.\nSiempre que íbamos desde el lugar dónde sucedió el primer asesinato hasta el segundo, me fijaba en la primera calle a la derecha, tenía un nombre muy curioso...",
+        "hint": "¿Habéis buscado dónde se produjeron los asesinatos?"
     },
     "p5": {
-        "main": "Felicidades.Ya te estás familiarizando con el trabajo de papá, así como con el mío. Ahora quiero que conozcas más del trabajo de mi padre, su trabajo merece ser reconocido.\nLo recuerdo hablando consigo mismo, diciendo números y dando golpecitos a la mesa como un loco. Yo estaba tan impresionado. Una vez me pidió que dibujara lo que estaba diciendo... Ahora quiero que tu lo hagas para mi.\nO hazlo para ti, si te parece más fácil…\n\nNo olvides papel y lápiz.",
-        "hint": "Marca los cuadros que escuchas en el audio, si te fijas en los espacios en blanco verás la respuesta."
+        "main": "¡Enhorabuena víctimas!\nYa os estáis familiarizando con el trabajo de papá, pero todavía os queda mucho por saber. Su trabajo merece ser reconocido.\nLo recuerdo hablando consigo mismo, diciendo números y dando golpecitos en la mesa como un loco. Me impresionaba tanto. Una vez me pidió que dibujara lo que estaba diciendo... Ahora quiero que vosotros lo hagáis para mí.",
+        "hint": "¿Qué cuadros os marca el audio? ¿Os habéis fijado en los espacios en blanco?"
     },
     "p6": {
-        "main": "Correcto, 340… Hace algunas décadas, papá escribió un código que tiene ese número, la policía, la prensa, el público… nadie pudo descifrarlo.\n\nAsí que ya sabes cual es tu desafío… ¡vas!",
-        "hint": "Busca la foto “Código 340 Zodiac” y relaciónalo con el mensaje encriptado."
+        "main": "Correcto, 340… Hace algunas décadas, papá escribió un código en el cipher 340. La policía, la prensa, el público… nadie pudo descifrarlo.\n\nAsí que ya sabéis cuál es vuestro desafío… ¡Daos prisa!",
+        "hint": "¿Habéis buscado el “Cipher 340 Zodiac”? ¿En qué letras se convierten esas interrogaciones?"
     },
     "p7": {
-        "main": "Papá era toda una celebridad.\nRecuerdo que justo 2 días antes del lanzamiento del Apollo 12, un periódico local publicó un artículo sobre la carta que papá le escribió a los ciudadanos.\nÉl le mandó esta carta al público para que todos supieran cuántas personas había asesinado.\n\n¿Cuántas víctimas llevaba hasta ese día?",
-        "hint": "Una vez que sepas cuándo fue escrito el artículo, busca la imagen de ese artículo."
+        "main": "Papá era toda una celebridad.\nRecuerdo que, justo 2 días antes del lanzamiento del Apollo 12, un periódico local publicó un artículo sobre la carta que papá escribió a los ciudadanos.\nMandó esta carta al público para que todos supieran cuántas personas había asesinado.\n\n¿Cuántas víctimas llevaba hasta ese día?",
+        "hint": "Una vez que sepáis la fecha, merece la pena leer el artículo."
     },
     "p8": {
-        "main": "Así es, el mandaba cartas al San Francisco Chronicle, la policía y las televisoras… pero una vez dejó un mensaje diferente…",
-        "sub": "¿Con qué los asesinó?",
-        "hint": "busca “asesino zodiac puerta carro"
+        "main": "Así es: mandaba cartas a San Francisco Chronicle, a la policía y a las televisiones… pero una vez dejó un mensaje diferente…",
+        "sub": "¿Con qué objeto los asesinó?",
+        "placeholder": "escribid vuestra respuesta en inglés",
+        "hint": "¿Habéis visto el mensaje que dejó en la puerta del coche?"
     },
     "p9": {
-        "main": "Felicidades, tienes una mente fuerte aún.\n\nHas probado que sabes usar tus recursos y que eres capaz de resolver todo tipo de retos mentales.\n\nAsí que te dejaré vivir.. por ahora…\n\nDe hecho, estoy tan impresionado, que te quiero dar un regalo especial…\n\nDejanos tu email para poder informarte de más actividades.\n\nIncluso puede que tengas oportunidad de conocerme en persona…",
+        "main": "¡Felicidades!\nHabéis demostrado que sabéis usar vuestros recursos y que sois capaces de resolver todo tipo de retos mentales.\nAsí que os dejaré vivir.\nPor ahora…\nDe hecho, estoy tan impresionado, que te quiero dar un regalo especial…\nDejanos tu email para poder informarte de más actividades.\nIncluso puede que tengáis la oportunidad de conocerme en persona…",
         "yes_message": "por favor, elige país y ciudad mas cercana a ti",
         "no_message": "Una pena que me tengas miedo. Pero lo comprendo, mis manos están manchadas.\nCuando reúnas el valor que se requiere, ¡ven a verme!",
         "button_yes": "Si, quiero mi regalo",

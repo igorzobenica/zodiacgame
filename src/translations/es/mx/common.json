@@ -1,0 +1,86 @@
+{
+    "common": {
+        "terms_and_conditions": "Términos y Condiciones",
+        "privacy_policy": "Política de Privacidad",
+        "and": "y",
+        "back": "atrás",
+        "next": "siguiente",
+        "submit": "enviar",
+        "hint": "pista",
+        "placeholder": "escribe tu respuesta",
+        "placeholder_email": "inserta tu email",
+        "wrong_answer": "respuesta incorrecta",
+        "wrong": "incorrecto",
+        "play_sound": "reproducir sonido",
+        "yellow": "amarillos",
+        "yellow2": "amarillo",
+        "twenty_one": "veintiuno",
+        "red": "roja",
+        "red2": "rojo",
+        "sky_valley": "sky valley",
+        "sky_valley_road": "sky valley road",
+        "sky_valley_rd": "sky valley rd",
+        "sky_valley_rd_dot": "calle sky valley",
+        "seven": "siete",
+        "byknife": "cuchillo",
+        "english": "inglés",
+        "spanish": "español",
+        "mexico": "méxico",
+        "select_country": "Elige País",
+        "select_city": "Elige Ciudad",
+        "go_back_to_homepage": "volver a la página principal"
+    },
+    "p0": {
+        "title": "de tal palo, tal astilla",
+        "subtitle": "Juego de adivinanzas en línea de Fox in a Box",
+        "main": "¡Bienvenido! Te ha estado esperando...\nHan pasado 40 años desde la última vez que se lo pasó tan bien, esta deseando jugar un pequeño jueguecito contigo.\nAsegúrate de leer todas las paginas detenidamente, podrás usar papel y boli y navegar internet para buscar soluciones a todos sus arcanos.\nEn el improbable caso de que seas mas listo que él, tal vez haya algo especial esperándote al otro lado...",
+        "button": "Jugar",
+        "modal_text": "Elige idioma"
+    },
+    "p1": {
+        "main": "Hola,\n\nEstoy seguro que no me conoces todavía, pero seguramente has oído hablar de mi padre.\nEl fue una pesadilla para San Francisco y todo California.\nEl fue y aún es, el asesino serial más misterioso y temido de todos los tiempos.\nAunque mandaba cartas a la policía, a la prensa e incluso hizo una entrevista, él nunca fue identificado y nunca lo detuvieron.\nYo no dejaré que esto se olvide y voy a llevar su legado conmigo.\nSin embargo, los tiempos han cambiado y ¡ahora tendrás que ser más listo que yo! Si lo logras, consideraré dejarte vivir.\nSi no lo logras… ya sabes como termina esta historia...\n¿Te atreves a adentrarte en la mente de mi padre?",
+        "button": "acepto el reto"
+    },
+    "p2": {
+        "main": "Me he enterado que ya existe un juego de escape inspirado en el trabajo de mi padre y mío. Me parece excelente y creo que voy a visitarlo pronto.\n\nEste juego puede ser difícil y te puede dar un poco de miedo, pero yo me voy a divertir muchísimo. Voy a retar a tu mente, tu percepción, tu lógica y tu concentración. Para mi esto es solo un juego, pero para ti, hay mucho en juego…\n\nPon mucha atención al video."
+    },
+    "p3": {
+        "q1": "¿De qué color son mis guantes?",
+        "q2": "¿Cuál es el número en el collar de la chica?",
+        "q3": "¿De qué color es la lámpara sobre el escritorio?",
+        "hint": "Color de los guantes 1:13\nNúmero en el collar 3:02\nColor de la lámpara 2:04"
+    },
+    "p4": {
+        "main": "Mmm… tienes buen ojo…\n\nVamos a regresar un poco en el tiempo, ¿vale?\nCuando era pequeño, papá me llevaba en el auto al lago. Siempre hacía una parada en dos lugares especiales para el… lugares donde había matado algunas personas y había tomado sus almas para apropiárselas.\nEl primer lugar era David & Betty, el segundo Michael & Darlene.\n\nAhora quiero que examines los lugares favoritos de papá.. hay bosque, lagos y caminos. Algunas calles en esta área son tan pequeñas que ni tienen nombre.\nAhora dime, cuando manejas desde la ubicación del primer asesinato a la ubicación del segundo asesinato, ¿cuál es la primera calle que pasas a tu lado derecho?",
+        "hint": "La sección de víctimas en Asesino del Zodiaco en Wikipedia contiene los lugares de los asesinatos."
+    },
+    "p5": {
+        "main": "Felicidades.Ya te estás familiarizando con el trabajo de papá, así como con el mío. Ahora quiero que conozcas más del trabajo de mi padre, su trabajo merece ser reconocido.\nLo recuerdo hablando consigo mismo, diciendo números y dando golpecitos a la mesa como un loco. Yo estaba tan impresionado. Una vez me pidió que dibujara lo que estaba diciendo... Ahora quiero que tu lo hagas para mi.\nO hazlo para ti, si te parece más fácil…\n\nNo olvides papel y lápiz.",
+        "hint": "Marca los cuadros que escuchas en el audio, si te fijas en los espacios en blanco verás la respuesta."
+    },
+    "p6": {
+        "main": "Correcto, 340… Hace algunas décadas, papá escribió un código que tiene ese número, la policía, la prensa, el público… nadie pudo descifrarlo.\n\nAsí que ya sabes cual es tu desafío… ¡vas!",
+        "hint": "Busca la foto “Código 340 Zodiac” y relaciónalo con el mensaje encriptado."
+    },
+    "p7": {
+        "main": "Papá era toda una celebridad.\nRecuerdo que justo 2 días antes del lanzamiento del Apollo 12, un periódico local publicó un artículo sobre la carta que papá le escribió a los ciudadanos.\nÉl le mandó esta carta al público para que todos supieran cuántas personas había asesinado.\n\n¿Cuántas víctimas llevaba hasta ese día?",
+        "hint": "Una vez que sepas cuándo fue escrito el artículo, busca la imagen de ese artículo."
+    },
+    "p8": {
+        "main": "Así es, el mandaba cartas al San Francisco Chronicle, la policía y las televisoras… pero una vez dejó un mensaje diferente…",
+        "sub": "¿Con qué los asesinó?",
+        "placeholder": "escribid vuestra respuesta en inglés",
+        "hint": "busca “asesino zodiac puerta carro"
+    },
+    "p9": {
+        "main": "Felicidades, tienes una mente fuerte aún.\nHas probado que sabes usar tus recursos y que eres capaz de resolver todo tipo de retos mentales.\nAsí que te dejaré vivir.. por ahora…\nDe hecho, estoy tan impresionado, que te quiero dar un regalo especial…\nDejanos tu email para poder informarte de más actividades.\nIncluso puede que tengas oportunidad de conocerme en persona…",
+        "yes_message": "por favor, elige país y ciudad mas cercana a ti",
+        "no_message": "Una pena que me tengas miedo. Pero lo comprendo, mis manos están manchadas.\nCuando reúnas el valor que se requiere, ¡ven a verme!",
+        "button_yes": "Si, quiero mi regalo",
+        "button_no": "No, gracias",
+        "modal_opt_out": "Puedes salir en cualquier momento.",
+        "modal_email_validation": "Por favor, inserta un email válido",
+        "modal_email_message": "Tu regalo está a un click de distancia",
+        "modal_thank_you_message": "Gracias, en breve te llegará algo al email."
+    }
+}

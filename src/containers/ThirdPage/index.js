@@ -16,9 +16,9 @@ const PageWrapper = styled.div`
 
 const ThirdPage = ({ history }) => {
   const { t } = useTranslation();
-  const firstInputCorrectAnswers = [t('common.yellow')];
+  const firstInputCorrectAnswers = [t('common.yellow'), t('common.yellow2')];
   const secondInputCorrectAnswers = [t('common.twenty_one'), "21"];
-  const thirdInputCorrectAnswers = [t('common.red')];
+  const thirdInputCorrectAnswers = [t('common.red'), t('common.red2')];
   const [firstInputValidationError, setFirstInputValidationError] = useState("");
   const [secondInputValidationError, setSecondInputValidationError] = useState("");
   const [thirdInputValidationError, setThirdInputValidationError] = useState("");

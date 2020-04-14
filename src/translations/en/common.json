@@ -13,8 +13,10 @@
         "wrong": "wrong",
         "play_sound": "play sound",
         "yellow": "yellow",
+        "yellow2": "yellow",
         "twenty_one": "twenty one",
         "red": "red",
+        "red2": "red",
         "sky_valley": "sky valley",
         "sky_valley_road": "sky valley road",
         "sky_valley_rd": "sky valley rd",
@@ -23,6 +25,7 @@
         "byknife": "byknife",
         "english": "english",
         "spanish": "spanish",
+        "mexico": "mexico",
         "select_country": "Select country",
         "select_city": "Select city",
         "go_back_to_homepage": "go back to homepage"
@@ -66,6 +69,7 @@
     "p8": {
         "main": "That's right he was writing letters to San Francisco Chronicle as well as to the police and TV station. But once he left a different kind of message...",
         "sub": "How were they killed?",
+        "placeholder": "write your answer",
         "hint": "Search Zodiac car door"
     },
     "p9": {

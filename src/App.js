@@ -26,7 +26,7 @@ import {
 } from "./containers";
 
 function App() {
-  const base = '/:locale(en|es)';
+  const base = '/:locale(en|es|mx)';
   return (
     <Router>
       <Layout>
@@ -40,7 +40,7 @@ function App() {
           <Route path={`${base}/${PAGE_3}`} exact component={ThirdPage} />
           <Route path={`${base}/${PAGE_2}`} exact component={SecondPage} />
           <Route path={`${base}/${PAGE_1}`} exact component={FirstPage} />
-          <Route path={`/:locale(en|es)?`} exact component={StartPage} />
+          <Route path={`/:locale(en|es|mx)?`} exact component={StartPage} />
         </Switch>
       </Layout>
     </Router>
