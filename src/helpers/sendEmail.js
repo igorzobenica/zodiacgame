@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const sendEmail = (location, language, email) => {
-  axios.get(`${location}/rest/sendZodiacRiddleGameEmail`, {
+  axios.get(`https://cors-anywhere.herokuapp.com/${location}/rest/sendZodiacRiddleGameEmail`, {
     headers: {
       'EMAIL': email,
       'LANG': language,
