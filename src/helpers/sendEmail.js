@@ -1,9 +1,10 @@
 import axios from "axios";
 
-export const sendEmail = (location, language, email) => {
+export const sendEmail = (location, language, fieldValues) => {
   axios.get(`https://cors-anywhere.herokuapp.com/${location}/rest/sendZodiacRiddleGameEmail`, {
     headers: {
-      'EMAIL': email,
+      'NAME': fieldValues.name,
+      'EMAIL': fieldValues.email,
       'LANG': language,
     }
   })

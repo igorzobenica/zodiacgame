@@ -9,6 +9,9 @@
         "hint": "hint",
         "placeholder": "write your answer",
         "placeholder_email": "enter your email",
+        "placeholder_name": "enter your name",
+        "label_name": "name",
+        "label_email": "email",
         "wrong_answer": "wrong answer",
         "wrong": "wrong",
         "play_sound": "play sound",
@@ -79,6 +82,7 @@
         "button_yes": "Yes, I want my gift",
         "button_no": "No, thank you",
         "modal_opt_out": "You may opt out ant time.",
+        "modal_name_validation": "Please enter your name",
         "modal_email_validation": "Please enter a valid email",
         "modal_email_message": "your present is one step away",
         "modal_thank_you_message": "thank you for submitting your email, expect something nice in your inbox soon."

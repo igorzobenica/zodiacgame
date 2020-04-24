@@ -9,6 +9,9 @@
         "hint": "pista",
         "placeholder": "escribe tu respuesta",
         "placeholder_email": "inserta tu email",
+        "placeholder_name": "inserta tu nombre",
+        "label_name": "nombre",
+        "label_email": "email",
         "wrong_answer": "respuesta incorrecta",
         "wrong": "incorrecto",
         "play_sound": "reproducir sonido",
@@ -79,6 +82,7 @@
         "button_yes": "Si, quiero mi regalo",
         "button_no": "No, gracias",
         "modal_opt_out": "Puedes salir en cualquier momento.",
+        "modal_name_validation": "Por favor, escriba su nombre",
         "modal_email_validation": "Por favor, inserta un email válido",
         "modal_email_message": "Tu regalo está a un click de distancia",
         "modal_thank_you_message": "Gracias, en breve te llegará algo al email."

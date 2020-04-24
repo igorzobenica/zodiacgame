@@ -22,27 +22,33 @@ const ButtonsWrapper = styled.div`
 const HintsModal = ({ show, setShowModal, location }) => {
   const { t } = useTranslation();
   const [showMessage, setShowMessage] = useState(false);
-  const [validationError, setValidationError] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  const [nameValidationError, setNameValidationError] = useState(false);
+  const [emailValidationError, setEmailValidationError] = useState(false);
+  const [nameValue, setNameValue] = useState("");
+  const [emailValue, setEmailValue] = useState("");
   const isCorrectEmail = () => {
     const emailVal = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
-    return emailVal.test(inputValue);
+    return emailVal.test(emailValue);
   }
   const onDismissHint = () => {
     setShowModal(false);
   };
   const onClick = () => {
-    if (isCorrectEmail()) {
-      const langId = getLanguageFromPathId();
-      sendEmail(location, langId, inputValue);
-      setShowMessage(true);
+    if (!nameValue.length || !isCorrectEmail()) {
+      if (!nameValue.length) setNameValidationError(t('p9.modal_name_validation'));
+      if (!isCorrectEmail()) setEmailValidationError(t('p9.modal_email_validation'));
     } else {
-      setValidationError(t('p9.modal_email_validation'));
+      const langId = getLanguageFromPathId();
+      sendEmail(location, langId, {
+        name: nameValue,
+        email: emailValue,
+      });
+      setShowMessage(true);
     }
-    
   };
+  const onEnter = () => (!!nameValue && !!emailValue) ? onClick : null;
   return (
-    <Modal show={show} onDismiss={onDismissHint}>
+    <Modal show={show} onDismiss={onDismissHint} isLarge={true}>
       <Modal.Body autoSize>
         {showMessage &&
           <>
@@ -57,14 +63,25 @@ const HintsModal = ({ show, setShowModal, location }) => {
           <>
             <Typo.p>{t("p9.modal_email_message")}</Typo.p>
             <InputFieldWithButton
+              label={t("common.label_name")}
+              width="100%"
+              inputValue={nameValue}
+              setInputValue={setNameValue}
+              placeholder={t("common.placeholder_name")}
+              validationError={nameValidationError}
+              setValidationError={setNameValidationError}
+              onEnter={onEnter}
+            />
+            <InputFieldWithButton
+              label={t("common.label_email")}
               type="email"
               width="100%"
-              inputValue={inputValue}
-              setInputValue={setInputValue}
+              inputValue={emailValue}
+              setInputValue={setEmailValue}
               placeholder={t("common.placeholder_email")}
-              validationError={validationError}
-              setValidationError={setValidationError}
-              onEnter={inputValue && onClick}
+              validationError={emailValidationError}
+              setValidationError={setEmailValidationError}
+              onEnter={onEnter}
             />
             <ButtonsWrapper>
               <Button onClick={onClick}>{t('common.submit')}</Button>
