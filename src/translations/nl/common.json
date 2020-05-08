@@ -1,0 +1,93 @@
+{
+    "common": {
+        "terms_and_conditions": "algemene voorwaarden",
+        "privacy_policy": "privacy beleid",
+        "by": "door",
+        "and": "en",
+        "back": "terug",
+        "next": "volgende",
+        "submit": "indienen",
+        "hint": "hint",
+        "placeholder": "schrijf hier je antwoord",
+        "placeholder_email": "voel je email adres in",
+        "placeholder_name": "vul uw naam in",
+        "label_name": "naam",
+        "label_email": "email",
+        "wrong_answer": "verkeerd antwoord",
+        "wrong": "verkeerd",
+        "play_sound": "speel geluid af",
+        "yellow": "geel",
+        "yellow2": "geel",
+        "twenty_one": "eenentwintig",
+        "red": "rood",
+        "red2": "rood",
+        "sky_valley": "sky valley",
+        "sky_valley_road": "sky valley road",
+        "sky_valley_rd": "sky valley rd",
+        "sky_valley_rd_dot": "sky valley rd.",
+        "seven": "zeven",
+        "byknife": "door mes",
+        "english": "engels",
+        "dutch": "nederlandse",
+        "spanish": "spaanse",
+        "mexico": "mexico",
+        "select": "selecteer",
+        "select_country": "selecteer land",
+        "select_city": "selecteer stad",
+        "go_back_to_homepage": "ga terug naar de homepage"
+    },
+    "p0": {
+        "title": "Zo vader, zo zoon",
+        "subtitle": "Online raadsel spel van Fox In A Box",
+        "main": "Welkom! Hij heeft gewacht op jou…\nHet is 40 jaar geleden sinds de laatste keer dat hij een beetje plezier had, dus hij kan niet wachten om een klein spelletje met je te spelen.\nWees er zeker van dat je elke pagina goed en nauwkeurig leest, maak gebruik van pen en papier en maak gebruik van het internet om de antwoorden te vinden van al zijn raadsels.\nAls je goed genoeg bent om hem te slim af zijn, staat er misschien wel wat speciaals op je te wachten aan de andere kant…",
+        "button": "speel nu",
+        "modal_text": "Kies speltaal"
+    },
+    "p1": {
+        "main": "Hallo,\nIk weet niet zeker of je al van me gehoord hebt, maar je hebt zeker van me vader gehoord.\nHij was een verschrikking voor Californië en San Francisco.\nHij was en is nog steeds de meest gevreesde en mysterieuze serie moordenaar ooit.\nOok al heeft hij brieven verstuurd naar de politie, pers en heeft hij een interview gegeven, \nhij is nooit geïdentificeerd en hij was nooit gestopt.\nIk laat zijn werk niet vergeten en ik zal zijn erfenis zelf voorzetten.\n\nEchter, de tijden zijn veranderd. Nu daag ik je uit om mij te slim af te zijn! Doe dat en ik zal overwegen jete laten leven. Faal – en jij zal wraak gaan voelen.\n\nDurf jij diep in het werk van mijn vader te duiken?",
+        "button": "ga de uitdaging aan"
+    },
+    "p2": {
+        "main": "Ik ben erachter gekomen dat er al een real life game is die zowel door het werk van mijn vader als door dat van mij is geïnspireerd. Ik vind het grappig en de moeite van het bekijken waard.\n\nDit spel kan moeilijk en eng voor jou zijn, maar het zal leuk voor mij zijn. Ik zal je geest, je perceptie, je verstand en deductie uitdagen. Voor mij, is dit slechts een spel, maar voor jou is de inzet hoog… Let goed op de onderstaande video."
+    },
+    "p3": {
+        "q1": "welke kleur zijn mijn handschoenen?",
+        "q2": "wat is het nummer op de hals ketting van het meisje?",
+        "q3": "wat is de kleur van de bureaulamp?",
+        "hint": "Kleur van de handschoen – 1:13\nnummer van de hals ketting – 3:02\nkleur van de lamp – 2:04"
+    },
+    "p4": {
+        "main": "Je hebt een scherp oog…\n\nLaten we terug de tijd in gaan en wat herinneringen ophalen, zullen we:\nAls kind nam mijn vader me vaak mee op lange ritten bij een meer. We stopte altijd op twee plekken en respecteerden het werk van mijn vader. Omdat, zie je, het is op deze twee plekken dat hij sommige mensen aanviel en hun zielen claimden terwijl hij compleet <span>WIKI</span>d ging. De eerste plek was David en Betty, de tweede Michael en Darlene.\n\nIk wil dat jij mijn vaders favoriete omgeving beter onderzoekt. Er zijn bossen, beken, meren en wegen. Sommige wegen in deze omgeving zijn zo klein dat ze zelfs niet eens een namen hebben.\nVertel mij, Als je rijdt van de eerste plek van de moord naar de plek van de tweede moord, wat is de eerste weg met een naam die je tegen komt aan de rechter kant?",
+        "hint": "Het slachtoffergedeelte op de Zodiac Killer Wikipedia-pagina bevat de coördinaten van elke moord."
+    },
+    "p5": {
+        "main": "Gefeliciteerd. Je raakt vertrouwd met het werk van zowel mijn vader als dat van mij. Ik wil dat je meer over mijn papa leert. Zijn werk verdient lof.\nIk herinner me dat hij tegen zichzelf praatte, cijfers zei en op de tafel klopte, als een gek. Ik was zo onder de indruk. Eens vroeg hij me om te tekenen wat hij zei. Kan je dat voor me doen?\nOf doe het zelf als het je makkelijker maakt…\n\nVergeet niet een stuk papier en een pen te pakken.",
+        "hint": "Markeer de velden die je hoort, als jij je focust op de ongemarkeerde velden zullen deze een cijfer laten zien. Herhaal dit voor de andere twee nummers."
+    },
+    "p6": {
+        "main": "Goed, 340… een paar decennia geleden, papa schreef een geheimschrift dat later werd gelabeld met dat nummer, de politie, de pers, het publiek… niemand kon het breken.\n\nIk denk dat je weet wat je uitdaging is. Gaan!",
+        "hint": "Zoek voor een foto van cipher 340 en “combineer” het met het geheime bericht."
+    },
+    "p7": {
+        "main": "Papa was een soort beroemdheid.\nIk kan me herinneren dat slechts twee dagen voor Apollo 12 werd gelanceerd, een lokale krant een artikel publiceerde over de brief van papa aan het publiek.\nHij stuurde de brief met als doel iedereen te laten weten hoeveel mensen hij had vermoord.\n\nHoeveel slachtoffers heeft hij op dat moment opgeëist?",
+        "hint": "Het bepalen van de datum waarop de krant het artikel heeft gepubliceerd, is een goed begin. Zoek vanaf daar naar een foto van het artikel dat op die datum is gepubliceerd."
+    },
+    "p8": {
+        "main": "Dat klopt hij schreef brieven naar de San Francisco Chronicle en ook naar de politie en TV stations. Maar een keer liet hij een andere soort boodschap achter…",
+        "sub": "Hoe zijn ze vermoord?",
+        "placeholder": "schrijf hier je antwoord",
+        "hint": "zoek op Zodiac auto deur"
+    },
+    "p9": {
+        "main": "Gefeliciteerd, jij hebt een scherpe geest.\nJe hebt jezelf vindingrijk bewezen en bent in staat om allerlei soorten mentale uitdagingen op te lossen.\nDus ik laat je leven, voorlopig...\nIk ben zelfs zo onder de indruk dat ik je een speciaal cadeau wil geven...\nLaat hieronder je e-mailadres achter als je wilt zien wat ik voor je in petto heb.\nMisschien krijg je zelfs de kans om me persoonlijk te ontmoeten...",
+        "yes_message": "Selecteer het land en de stad het dichtst bij u",
+        "no_message": "Het spijt me te horen dat je bang voor me bent. Maar ik kan het begrijpen, ik heb vuile handen..\nAls je denkt dat je dapper genoeg bent, bezoek me dan gewoon!",
+        "button_yes": "Ja, ik wil mijn cadeau",
+        "button_no": "Nee, bedankt",
+        "modal_opt_out": "U kunt zich op elk moment afmelden.",
+        "modal_name_validation": "Voer uw naam in",
+        "modal_email_validation": "Vul een geldig e-mailadres in",
+        "modal_email_message": "je cadeau is een stap verwijderd",
+        "modal_thank_you_message": "bedankt voor het verzenden van je e-mail, verwacht binnenkort iets leuks in je inbox."
+    }
+}

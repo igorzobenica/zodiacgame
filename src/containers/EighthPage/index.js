@@ -60,7 +60,7 @@ const EighthPage = ({ history }) => {
         <PageLayout text={t('p8.main')} image={imageRebus}>
           <StyledParagraph>{t('p8.sub')}</StyledParagraph>
           <InputWrapper>
-            <Typo.p>by</Typo.p>
+            <Typo.p>{t('common.by')}</Typo.p>
             <InputFieldWithButton
               inputValue={inputValue}
               setInputValue={setInputValue}

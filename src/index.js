@@ -12,6 +12,7 @@ import Cookies from 'js-cookie';
 import common_es from "./translations/es/common.json";
 import common_es_mx from "./translations/es/mx/common.json";
 import common_en from "./translations/en/common.json";
+import common_nl from "./translations/nl/common.json";
 
 const language = Cookies.get('language');
 
@@ -29,6 +30,9 @@ i18next.use(detector).init({
     },
     mx: {
       common: common_es_mx
+    },
+    nl: {
+      common: common_nl
     }
   }
 });

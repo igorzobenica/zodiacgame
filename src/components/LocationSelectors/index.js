@@ -42,6 +42,7 @@ const LocationSelectors = ({location, setLocation, locationList, children}) => {
       <Dropdown 
         shadow
         labelText={t('common.select_country')}
+        placeholder={`${t('common.select')}...`}
         width="100%"
         options={locationList.map(obj => obj.country).filter((item, index) => locationList.map(obj => obj.country).indexOf(item) === index).sort().map(item => ({label: item}))}
         value={country}
@@ -50,6 +51,7 @@ const LocationSelectors = ({location, setLocation, locationList, children}) => {
       {country && <Dropdown 
         shadow
         labelText={t('common.select_city')}
+        placeholder={`${t('common.select')}...`}
         width="100%"
         options={locationList.filter((obj) => obj.country === country.label)}
         value={location}

@@ -1,4 +1,4 @@
-import { EN, ES, MX } from "../constants";
+import { EN, ES, MX, NL } from "../constants";
 
 export const getLanguageFromPath = () => {
   const path = window.location.pathname.split('/')[1];
@@ -6,6 +6,7 @@ export const getLanguageFromPath = () => {
     case EN:
     case ES:
     case MX:
+    case NL:
       return path;
     default:
       return null;

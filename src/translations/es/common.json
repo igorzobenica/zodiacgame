@@ -2,6 +2,7 @@
     "common": {
         "terms_and_conditions": "Términos y Condiciones",
         "privacy_policy": "Política de Privacidad",
+        "by": "by",
         "and": "y",
         "back": "tenemos miedo",
         "next": "somos valientes",
@@ -27,8 +28,10 @@
         "seven": "siete",
         "byknife": "cuchillo",
         "english": "inglés",
+        "dutch": "holandés",
         "spanish": "español",
         "mexico": "méxico",
+        "select": "elige",
         "select_country": "Elige País",
         "select_city": "Elige Ciudad",
         "go_back_to_homepage": "volver a la página principal"

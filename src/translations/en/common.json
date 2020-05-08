@@ -2,6 +2,7 @@
     "common": {
         "terms_and_conditions": "Terms and Conditions",
         "privacy_policy": "Privacy Policy",
+        "by": "by",
         "and": "and",
         "back": "back",
         "next": "next",
@@ -27,8 +28,10 @@
         "seven": "seven",
         "byknife": "byknife",
         "english": "english",
+        "dutch": "dutch",
         "spanish": "spanish",
         "mexico": "mexico",
+        "select": "select",
         "select_country": "Select country",
         "select_city": "Select city",
         "go_back_to_homepage": "go back to homepage"

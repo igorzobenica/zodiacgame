@@ -6,7 +6,7 @@ import HintModal from "../../components/HintsModal";
 // import Cookies from 'js-cookie';
 import { getLanguageFromPath } from "../../helpers/getLanguageFromPath";
 import { loadImage } from "../../helpers/loadImage";
-import { EN, ES, MX } from "../../constants";
+import { EN, ES, MX, NL } from "../../constants";
 import { PAGE_1 } from "../../routeConstants";
 import { Page2Background as image, Page2BackgroundSmall as imageSmall } from "../../ui/Background";
 
@@ -56,6 +56,7 @@ const StartPage = ({history, ...props}) => {
           <Button onClick={() => {onClickLanguage(EN)}}>{t('common.english')}</Button>
           <Button onClick={() => {onClickLanguage(ES)}}>{t('common.spanish')}</Button>
           <Button onClick={() => {onClickLanguage(MX)}}>{`${t('common.spanish')}(${t('common.mexico')})`}</Button>
+          <Button onClick={() => {onClickLanguage(NL)}}>{t('common.dutch')}</Button>
         </ButtonsWrapper>
       </HintModal>
     </PageWrapper>
