@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cc589eb498a0cc971d271056df1d12b",
+    "revision": "f474e3b09faacfe938d72a26eb28dab9",
     "url": "/zodiacgame/index.html"
   },
   {
-    "revision": "d052330220ccbac1993f",
+    "revision": "aa0a2dbcda35eaaac9b8",
     "url": "/zodiacgame/static/css/main.952bc616.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zodiacgame/static/js/2.8c16886a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d052330220ccbac1993f",
-    "url": "/zodiacgame/static/js/main.9e887046.chunk.js"
+    "revision": "aa0a2dbcda35eaaac9b8",
+    "url": "/zodiacgame/static/js/main.2064bb1f.chunk.js"
   },
   {
     "revision": "86005c0ca59903eaf087",
