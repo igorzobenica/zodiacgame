@@ -10,7 +10,6 @@ const Card = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
-  overflow: auto;
   ${({isLarge}) => isLarge ? 
     css`
       background-image: url(${props => props.isImgLoaded ? Page9Modal : Page9ModalSmall});

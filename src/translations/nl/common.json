@@ -26,6 +26,7 @@
         "sky_valley_rd": "sky valley rd",
         "sky_valley_rd_dot": "sky valley rd.",
         "seven": "zeven",
+        "knife": "mes",
         "byknife": "door mes",
         "english": "engels",
         "dutch": "nederlandse",
@@ -39,12 +40,12 @@
     "p0": {
         "title": "Zo vader, zo zoon",
         "subtitle": "Online raadsel spel van Fox In A Box",
-        "main": "Welkom! Hij heeft gewacht op jou…\nHet is 40 jaar geleden sinds de laatste keer dat hij een beetje plezier had, dus hij kan niet wachten om een klein spelletje met je te spelen.\nWees er zeker van dat je elke pagina goed en nauwkeurig leest, maak gebruik van pen en papier en maak gebruik van het internet om de antwoorden te vinden van al zijn raadsels.\nAls je goed genoeg bent om hem te slim af zijn, staat er misschien wel wat speciaals op je te wachten aan de andere kant…",
+        "main": "Welkom! Hij heeft gewacht op jou…\nHet is 40 jaar geleden sinds de laatste keer dat hij een beetje plezier had, dus hij kan niet wachten om een klein spelletje met je te spelen.\nWees er zeker van dat je elke pagina goed en nauwkeurig leest, maak gebruik van pen en papier en maak gebruik van het internet om de antwoorden te vinden van al zijn raadsels.\nAls je goed genoeg bent om hem te slim af te zijn, staat er misschien wel wat speciaals op je te wachten aan de andere kant…",
         "button": "speel nu",
         "modal_text": "Kies speltaal"
     },
     "p1": {
-        "main": "Hallo,\nIk weet niet zeker of je al van me gehoord hebt, maar je hebt zeker van me vader gehoord.\nHij was een verschrikking voor Californië en San Francisco.\nHij was en is nog steeds de meest gevreesde en mysterieuze serie moordenaar ooit.\nOok al heeft hij brieven verstuurd naar de politie, pers en heeft hij een interview gegeven, \nhij is nooit geïdentificeerd en hij was nooit gestopt.\nIk laat zijn werk niet vergeten en ik zal zijn erfenis zelf voorzetten.\n\nEchter, de tijden zijn veranderd. Nu daag ik je uit om mij te slim af te zijn! Doe dat en ik zal overwegen jete laten leven. Faal – en jij zal wraak gaan voelen.\n\nDurf jij diep in het werk van mijn vader te duiken?",
+        "main": "Hallo,\nIk weet niet zeker of je al van me gehoord hebt, maar je hebt zeker van me vader gehoord.\nHij was een verschrikking voor Californië en San Francisco.\nHij was en is nog steeds de meest gevreesde en mysterieuze serie moordenaar ooit.\nOok al heeft hij brieven verstuurd naar de politie, pers en heeft hij een interview gegeven, \nhij is nooit geïdentificeerd en hij was nooit gestopt.\nIk laat zijn werk niet vergeten en ik zal zijn erfenis zelf voorzetten.\n\nEchter, de tijden zijn veranderd. Nu daag ik je uit om mij te slim af te zijn! Doe dat en ik zal overwegen je te laten leven. Faal – en jij zal me wraak gaan voelen.\n\nDurf jij diep in het werk van mijn vader te duiken?",
         "button": "ga de uitdaging aan"
     },
     "p2": {

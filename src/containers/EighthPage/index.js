@@ -32,7 +32,7 @@ const maxLength = 20;
 
 const EighthPage = ({ history }) => {
   const { t } = useTranslation();
-  const correctAnswers = ['knife', t('common.byknife'), 'by knife'];
+  const correctAnswers = [t('common.knife'), t('common.byknife'), 'by knife'];
   const [inputValue, setInputValue] = useState('');
   const [validationError, setValidationError] = useState('');
   const [showModal, setShowModal] = useState(false);

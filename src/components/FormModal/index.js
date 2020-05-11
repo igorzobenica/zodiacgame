@@ -46,7 +46,7 @@ const HintsModal = ({ show, setShowModal, location }) => {
       setShowMessage(true);
     }
   };
-  const onEnter = () => (!!nameValue && !!emailValue) ? onClick : null;
+  const onEnter = () => (!!nameValue) && (!!emailValue) ? onClick : null;
   return (
     <Modal show={show} onDismiss={onDismissHint} isLarge={true}>
       <Modal.Body autoSize>
@@ -70,7 +70,7 @@ const HintsModal = ({ show, setShowModal, location }) => {
               placeholder={t("common.placeholder_name")}
               validationError={nameValidationError}
               setValidationError={setNameValidationError}
-              onEnter={onEnter}
+              onEnter={onEnter()}
             />
             <InputFieldWithButton
               label={t("common.label_email")}
@@ -81,7 +81,7 @@ const HintsModal = ({ show, setShowModal, location }) => {
               placeholder={t("common.placeholder_email")}
               validationError={emailValidationError}
               setValidationError={setEmailValidationError}
-              onEnter={onEnter}
+              onEnter={onEnter()}
             />
             <ButtonsWrapper>
               <Button onClick={onClick}>{t('common.submit')}</Button>
