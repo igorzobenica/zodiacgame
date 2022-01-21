@@ -15,7 +15,7 @@ const PageWrapper = styled.div`
   display: flex;
 `
 
-const StyledParagraph = styled(Typo.p)`
+const StyledParagraph = styled(Typo.P)`
   text-align: center;
 `
 
@@ -60,7 +60,7 @@ const EighthPage = ({ history }) => {
         <PageLayout text={t('p8.main')} image={imageRebus}>
           <StyledParagraph>{t('p8.sub')}</StyledParagraph>
           <InputWrapper>
-            <Typo.p>{t('common.by')}</Typo.p>
+            <Typo.P>{t('common.by')}</Typo.P>
             <InputFieldWithButton
               inputValue={inputValue}
               setInputValue={setInputValue}

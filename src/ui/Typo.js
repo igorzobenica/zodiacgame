@@ -12,34 +12,34 @@ const colorLight = '#eeeeee'
 const colorDark = '#cccccc'
 
 const Typo = {
-  h1: styled.h1`
+  H1: styled.h1`
     ${font('bold', spacing250)};
     line-height: 1.25;
     &:first-child {
       margin-top: 0;
     }
   `,
-  h2: styled.h2`
+  H2: styled.h2`
     ${font('bold', spacing200)};
     line-height: 1.25;
     &:first-child {
       margin-top: 0;
     }
   `,
-  h3: styled.h3`
+  H3: styled.h3`
     ${font('bold', spacing162)};
     line-height: 1.25;
     &:first-child {
       margin-top: 0;
     }
   `,
-  h4: styled.h4`
+  H4: styled.h4`
     ${font(600, spacing150, undefined, 1.5)};
     &:first-child {
       margin-top: 0;
     }
   `,
-  p: styled.p`
+  P: styled.p`
     ${font()};
     line-height: 1.25;
     margin-top: 0;

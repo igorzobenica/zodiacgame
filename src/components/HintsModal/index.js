@@ -9,7 +9,7 @@ const HintsModal = ({ show, text, setShowModal, textCenter, children }) => {
   return (
     <Modal show={show} onDismiss={onDismissHint}>
       <Modal.Body textCenter={textCenter}>
-        <Typo.p>{text}</Typo.p>
+        <Typo.P>{text}</Typo.P>
         {children}
       </Modal.Body>
     </Modal>

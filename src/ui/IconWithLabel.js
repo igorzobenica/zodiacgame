@@ -26,7 +26,7 @@ const IconWithLabel = ({
     <div>
       <ImageWrapper onClick={onClick}>
         <img src={image} alt="" {...props}/>
-        <Typo.p noMargin>{text}</Typo.p>
+        <Typo.P noMargin>{text}</Typo.P>
       </ImageWrapper>
     </div>
   )

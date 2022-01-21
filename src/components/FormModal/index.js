@@ -6,7 +6,7 @@ import { sendEmail } from "../../helpers/sendEmail";
 import InputFieldWithButton from "../InputFieldWithButton";
 import { getLanguageFromPathId } from "../../helpers/getLanguageFromPath";
 
-const StyledText = styled(Typo.p)`
+const StyledText = styled(Typo.P)`
   font-size: 1rem;
 `;
 
@@ -52,16 +52,16 @@ const HintsModal = ({ show, setShowModal, location }) => {
       <Modal.Body autoSize>
         {showMessage &&
           <>
-            <Typo.p>{t("p9.modal_thank_you_message")}{'\n'}
+            <Typo.P>{t("p9.modal_thank_you_message")}{'\n'}
               <StyledLink href="https://foxinabox.re/franchise">
                 {t("common.go_back_to_homepage")}
               </StyledLink>
-            </Typo.p>
+            </Typo.P>
           </>
         }
         {!showMessage &&
           <>
-            <Typo.p>{t("p9.modal_email_message")}</Typo.p>
+            <Typo.P>{t("p9.modal_email_message")}</Typo.P>
             <InputFieldWithButton
               label={t("common.label_name")}
               width="100%"

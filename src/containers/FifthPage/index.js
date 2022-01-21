@@ -91,7 +91,7 @@ const FifthPage = ({ history }) => {
     <PageWrapper isImgLoaded={isImgLoaded}>
       <ContentWrapper>
         <div>
-          <TextWrapper><Typo.p>{t('p5.main')}</Typo.p></TextWrapper>
+          <TextWrapper><Typo.P>{t('p5.main')}</Typo.P></TextWrapper>
         </div>
         <ImageWrapper>
           <div>

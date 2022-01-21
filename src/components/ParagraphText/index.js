@@ -13,7 +13,7 @@ const ParagraphText = ({
 }) => {
   return (
     <TextWrapper>
-      <Typo.p>{text}</Typo.p>
+      <Typo.P>{text}</Typo.P>
       {children}
     </TextWrapper>
   );

@@ -40,7 +40,7 @@ const FirstPage = props => {
       <ContentWrapper>
         <PageLayout>
           <ImageWrapper><img src={logo} alt="" /></ImageWrapper>
-          <Typo.p>{t('p1.main')}</Typo.p>
+          <Typo.P>{t('p1.main')}</Typo.P>
         </PageLayout>
         <FooterButtons justifyContent="flex-end" labelNext={t('p1.button')} linkNext={PAGE_2}/>
       </ContentWrapper>

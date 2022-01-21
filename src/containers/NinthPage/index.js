@@ -50,7 +50,7 @@ const NinthPage = props => {
       <Page>
         {(show === 'text') && 
           <>
-            <Typo.p>{t('p9.main')}</Typo.p>
+            <Typo.P>{t('p9.main')}</Typo.P>
             <ButtonsWrapper>
               <Button onClick={() => {setShow('no')}}>{t('p9.button_no')}</Button>
               <Button onClick={() => {setShow('yes')}} disabled={!locationList}>{t('p9.button_yes')}</Button>
@@ -59,7 +59,7 @@ const NinthPage = props => {
         }
         {(show === 'yes') && 
           <div>
-            <Typo.p>{t('p9.yes_message')}</Typo.p>
+            <Typo.P>{t('p9.yes_message')}</Typo.P>
             <LocationSelectors 
               location={location}
               setLocation={setLocation}
@@ -71,7 +71,7 @@ const NinthPage = props => {
         }
         {(show === 'no') && 
           <>
-            <Typo.p>{t('p9.no_message')}</Typo.p>
+            <Typo.P>{t('p9.no_message')}</Typo.P>
             <StyledLink href="https://foxinabox.re/franchise">
               {t("common.go_back_to_homepage")}
             </StyledLink>

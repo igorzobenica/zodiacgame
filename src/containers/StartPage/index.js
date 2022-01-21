@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import {Typo, Button} from '../../ui';
 import HintModal from "../../components/HintsModal";
-// import Cookies from 'js-cookie';
 import { getLanguageFromPath } from "../../helpers/getLanguageFromPath";
 import { loadImage } from "../../helpers/loadImage";
 import { EN, ES, MX, NL } from "../../constants";
@@ -46,9 +45,9 @@ const StartPage = ({history, ...props}) => {
   return (
     <PageWrapper isImgLoaded={isImgLoaded}>
       <PageLayout>
-       <Typo.h1>{t('p0.title')}</Typo.h1>
-       <Typo.h2>{t('p0.subtitle')}</Typo.h2>
-       <Typo.p>{t('p0.main')}</Typo.p>
+       <Typo.H1>{t('p0.title')}</Typo.H1>
+       <Typo.H2>{t('p0.subtitle')}</Typo.H2>
+       <Typo.P>{t('p0.main')}</Typo.P>
        <Button onClick={onClick}>{t('p0.button')}</Button>
       </PageLayout>
       <HintModal show={showModal} text={t('p0.modal_text')} setShowModal={setShowModal} textCenter={true}>
